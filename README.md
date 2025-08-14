@@ -22,7 +22,7 @@
     <li>Skill section with floating tech icons and GSAP transitions</li>
     <li>Project section with custom-built interactive cards</li>
     <li>Qualification and Experience sections with timelines and visual effects</li>
-    <li>Highly animated Contact section with EmailJS integration and parallax stars background</li>
+    <li>Highly animated Contact section with parallax stars background</li>
     <li>Responsive and accessible across all devices</li>
   </ul>
 
@@ -76,7 +76,7 @@ portfolio/
   <h2 style="color: #1e3a8a;">🧩 How to Run Locally</h2>
   <ol>
     <li>Clone the repo:
-      <pre><code>git clone https://github.com/amangupta9454/newportfolio.git</code></pre>
+      <pre><code>git clone https://github.com/amangupta9454/ANIMATED_PORTFOLIO.git</code></pre>
     </li>
     <li>Install dependencies:
       <pre><code>cd portfolio
