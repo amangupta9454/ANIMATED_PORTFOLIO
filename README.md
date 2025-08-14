@@ -5,7 +5,7 @@
 
   <p style="font-size: 1.2em; text-align: center;">
     A highly animated and responsive portfolio website built with the MERN stack and advanced front-end libraries.<br />
-    <a href="https://guptaaman.netlify.app/" target="_blank" style="color: #3b82f6;">🌐 Live Portfolio Link</a>
+    <a href="http://gupta-aman-portfolio.netlify.app/" target="_blank" style="color: #3b82f6;">🌐 Live Portfolio Link</a>
   </p>
 
   <hr style="border: none; border-top: 2px solid #ddd;" />
@@ -50,7 +50,7 @@ portfolio/
     <li><strong>Hosting:</strong> Netlify</li>
   </ul>
 
-  <h2 style="color: #1e3a8a;">📦 Frontend Dependencies</h2>
+   <h2 style="color: #1e3a8a;">📦 Frontend Dependencies</h2>
   <table style="width: 100%; border-collapse: collapse;">
     <thead>
       <tr style="background: #e0f2fe;">
@@ -59,13 +59,13 @@ portfolio/
       </tr>
     </thead>
     <tbody>
-      
       <tr><td>gsap</td><td>^3.12.7</td></tr>
       <tr><td>install</td><td>^0.13.0</td></tr>
       <tr><td>npm</td><td>^11.2.0</td></tr>
       <tr><td>react</td><td>^19.0.0</td></tr>
       <tr><td>react-dom</td><td>^19.0.0</td></tr>
       <tr><td>react-icons</td><td>^5.5.0</td></tr>
+      <tr><td>react-scroll</td><td>^1.9.3</td></tr>
       <tr><td>scrollreveal</td><td>^4.0.9</td></tr>
       <tr><td>tailwindcss</td><td>^4.1.3</td></tr>
       <tr><td>typed.js</td><td>^2.1.0</td></tr>
