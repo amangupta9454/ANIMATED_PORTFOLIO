@@ -2468,7 +2468,7 @@ const Home = () => {
                     Email
                   </h3>
                   <p className={`text-sm ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'}`}>
-                    amangupta9454@gmail.com
+                    ag0567688@gmail.com
                   </p>
                 </div>
               </div>
@@ -2490,7 +2490,7 @@ const Home = () => {
                     Phone
                   </h3>
                   <p className={`text-sm ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'}`}>
-                    +91 9454815042
+                    +91 9560472926
                   </p>
                 </div>
               </div>
