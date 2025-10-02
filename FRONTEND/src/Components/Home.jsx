@@ -73,28 +73,38 @@ const Home = () => {
   const experiences = useMemo(() => [
     {
       id: 1,
-      title: "Web Development Internship",
-      company: "CodSoft",
-      duration: "10 Sep 2024 - 10 Oct 2024",
+      title: "Backend Development Internship",
+      company: "Tranquiex Technology",
+      duration: "10 Sep 2025 - Ongoing",
       description:
-        "Built dynamic, responsive web pages using HTML, CSS, and JavaScript, enhancing web development skills.",
+        "Developing backend systems using Node.js, Express, and MongoDB to build robust APIs, efficiently manage databases, troubleshoot server-side issues, and optimize performance and scalability.",
     },
     {
       id: 2,
+      title: "Frontend Development Internship",
+      company: "Edunet Foundation",
+      duration: "20 Aug 2025 - 10 Oct 2025",
+      description:
+        "Built dynamic, responsive web pages using HTML, CSS, and JavaScript, enhancing web development skills.",
+    },
+
+    {
+      id: 3,
+      title: "Mern Stack Development Internship",
+      company: "CodSoft",
+      duration: "10 Sep 2024 - 10 Oct 2024",
+      description:
+        "Worked on full-stack web applications using MongoDB, Express, React, and Node.js, gaining hands-on experience in building scalable solutions.",
+    },
+    {
+      id: 4,
       title: "Frontend Web Development Internship",
       company: "CodeAlpha",
       duration: "15 Sep 2024 - 15 Oct 2024",
       description:
         "Developed advanced websites with a focus on user experience and maintainable code.",
     },
-    {
-      id: 3,
-      title: "Python Internship",
-      company: "CodeAlpha",
-      duration: "15 Sep 2024 - 15 Oct 2024",
-      description:
-        "Utilized Python for automation and data analysis projects, improving efficiency.",
-    },
+   
   ], []);
 
   // Qualification data
@@ -233,7 +243,7 @@ const Home = () => {
       description: "Developed an AI-powered career coach web app using MERN stack and Gemini API for personalized roadmaps and resume generation.",
       image: coach,
       sourceCode: "https://github.com/amangupta9454/AI_TUTOR",
-      livePreview: "https://mindstep.netlify.app/",
+      livePreview: "#",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "GEMINI API"],
       featured: true,
     },
