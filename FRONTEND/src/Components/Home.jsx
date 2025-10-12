@@ -8,7 +8,7 @@ import ScrollReveal from "scrollreveal";
 import VanillaTilt from "vanilla-tilt";
 import agri from "../assets/agri.jpg";
 import coach from "../assets/coach.jpg";
-import calculator from "../assets/calculator.jpeg";
+import calculator from "../assets/cross.png";
 import image from "../assets/image.png";
 import hero from "../assets/heroImage.png";
 
@@ -242,8 +242,8 @@ const Home = () => {
       name: "AI CAREER COACH WEBSITE",
       description: "Developed an AI-powered career coach web app using MERN stack and Gemini API for personalized roadmaps and resume generation.",
       image: coach,
-      sourceCode: "https://github.com/amangupta9454/AI_TUTOR",
-      livePreview: "#",
+      sourceCode: "https://github.com/amangupta9454/AI-COACH",
+      livePreview: "https://mindstep.netlify.app/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "GEMINI API"],
       featured: true,
     },
@@ -262,8 +262,8 @@ const Home = () => {
       name: "TECH FEST REGISTRATION WEBSITE",
       description: "A fully functional college technical fest website with modern UI and custom features.",
       image: calculator,
-      sourceCode: "https://github.com/amangupta9454/HIET_TECHFEST",
-      livePreview: "http://hiet-crossroad.netlify.app/",
+      sourceCode: "https://github.com/amangupta9454/crossroads-2025",
+      livePreview: "https://hiet-crossroads.netlify.app/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS"],
       featured: false,
     },
