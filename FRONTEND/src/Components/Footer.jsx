@@ -1,16 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  FaGithub, 
-  FaLinkedin, 
-  FaInstagram, 
-  FaTelegram, 
-  FaWhatsapp, 
-  FaArrowUp,
-  FaMapMarkerAlt,
-  FaHeart,
-  FaCode,
-  FaRocket
-} from "react-icons/fa";
+import { FaLinkedin,  FaInstagram,  FaTelegram,  FaWhatsapp,   FaArrowUp,  FaMapMarkerAlt, FaHeart, FaCode, FaRocket } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
@@ -112,15 +101,7 @@ const Footer = () => {
               </a>
 
               {/* GitHub */}
-              <a
-                href="https://github.com/amangupta9454"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-4 bg-gradient-to-br from-gray-500/20 to-gray-600/20 rounded-2xl border border-gray-500/30 hover:border-gray-400 transform hover:scale-110 hover:rotate-3 transition-all duration-300 relative overflow-hidden"
-              >
-                <FaGithub size={32} className="text-gray-300 group-hover:scale-125 transition-transform duration-300" />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-400/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-              </a>
+             
 
               {/* LinkedIn */}
               <a
