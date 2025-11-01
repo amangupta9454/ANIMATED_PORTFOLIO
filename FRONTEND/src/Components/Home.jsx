@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
-import { FaLinkedin, FaDownload, FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaBriefcase, FaCalendarAlt, FaBuilding, FaGraduationCap, FaBookOpen, FaSchool, FaSeedling, FaTrophy, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaLinkedin, FaDownload, FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaBriefcase, FaCalendarAlt, FaBuilding, FaGraduationCap, FaBookOpen, FaSchool, FaSeedling, FaTrophy, FaEnvelope, FaPhone, FaMapMarkerAlt, FaMedal } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDatabase, FaCuttlefish, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiPython, SiCplusplus, SiExpress } from "react-icons/si";
 import Typed from "typed.js";
@@ -163,6 +163,17 @@ const Home = () => {
       gradient: 'linear-gradient(135deg, rgba(251, 191, 36, 0.25), transparent)',
       badge: '1st Place',
     },
+    {
+  id: 2,
+  icon: <FaMedal className="text-4xl text-blue-500" />,
+  title: 'Technical Paper Competition Winner',
+  subtitle: 'Scroll’s 2025 – Ajay Kumar Garg Engineering College, Ghaziabad',
+  detail: 'Secured 1st position in a National Technical Paper Writing Competition for the research paper titled "AI-Powered Skin Cancer Detection Using Deep Learning" under the domain of AI in Healthcare.',
+  borderColor: 'border-blue-500',
+  gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), transparent)',
+  badge: '1st Position',
+},
+
   ], []);
 
   // Optimized event handlers with useCallback
