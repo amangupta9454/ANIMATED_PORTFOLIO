@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
-import { FaLinkedin, FaDownload, FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaBriefcase, FaCalendarAlt, FaBuilding, FaGraduationCap, FaBookOpen, FaSchool, FaSeedling, FaTrophy, FaEnvelope, FaPhone, FaMapMarkerAlt, FaMedal } from "react-icons/fa";
+import { FaLinkedin, FaDownload, FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaBriefcase, FaCalendarAlt, FaBuilding, FaGraduationCap, FaBookOpen, FaSchool, FaSeedling, FaTrophy, FaEnvelope, FaPhone, FaMapMarkerAlt, FaMedal, FaProjectDiagram, FaCloud  } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDatabase, FaCuttlefish, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiPython, SiCplusplus, SiExpress } from "react-icons/si";
 import Typed from "typed.js";
@@ -54,20 +54,23 @@ const Home = () => {
 
   // Skills data
   const skills = useMemo(() => [
-    { name: "HTML5", icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
-    { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" />, proficiency: 50 },
-    { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" />, proficiency: 80 },
-    { name: "React.js", icon: <FaReact className="text-cyan-400" />, proficiency: 70 },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" />, proficiency: 60 },
-    { name: "Express.js", icon: <SiExpress className="text-gray-300" />, proficiency: 85 },
-    { name: "Node.js", icon: <FaNodeJs className="text-green-500" />, proficiency: 85 },
-    { name: "MongoDB", icon: <FaDatabase className="text-green-700" />, proficiency: 82 },
-    { name: "Nodemailer", icon: <FaEnvelope className="text-blue-400" />, proficiency: 90 },
-    { name: "C", icon: <FaCuttlefish className="text-blue-400" />, proficiency: 50 },
-    { name: "C++", icon: <SiCplusplus className="text-indigo-500" />, proficiency: 10 },
-    { name: "Python", icon: <SiPython className="text-yellow-500" />, proficiency: 70 },
-    { name: "DSA(Basic)", icon: <FaGitAlt className="text-orange-400" />, proficiency: 5 },
-  ], []);
+  { name: "HTML5", icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
+  { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" />, proficiency: 50 },
+  { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" />, proficiency: 80 },
+  { name: "React.js", icon: <FaReact className="text-cyan-400" />, proficiency: 70 },
+  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" />, proficiency: 60 },
+  { name: "Express.js", icon: <SiExpress className="text-gray-300" />, proficiency: 85 },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500" />, proficiency: 85 },
+  { name: "MongoDB", icon: <FaDatabase className="text-green-700" />, proficiency: 82 },
+  { name: "Nodemailer", icon: <FaEnvelope className="text-blue-400" />, proficiency: 90 },
+  { name: "C", icon: <FaCuttlefish className="text-blue-400" />, proficiency: 50 },
+  { name: "C++", icon: <SiCplusplus className="text-indigo-500" />, proficiency: 10 },
+  { name: "Python", icon: <SiPython className="text-yellow-500" />, proficiency: 70 },
+  { name: "DSA (Basic)", icon: <FaGitAlt className="text-orange-400" />, proficiency: 5 },
+  { name: "System Designing", icon: <FaProjectDiagram className="text-purple-500" />, proficiency: 20 },
+  { name: "Cloud Computing (Basic)", icon: <FaCloud className="text-sky-400" />, proficiency: 20 },
+], []);
+
 
   // Experience data
   const experiences = useMemo(() => [
@@ -154,17 +157,7 @@ const Home = () => {
   // Achievement data
   const achievements = useMemo(() => [
     {
-      id: 1,
-      icon: <FaTrophy className="text-4xl text-yellow-400" />,
-      title: 'Quiz Competition Winner',
-      subtitle: 'Gambed Quiz Competition 2024',
-      detail: 'Won first place in competitive programming and general knowledge quiz',
-      borderColor: 'border-yellow-400',
-      gradient: 'linear-gradient(135deg, rgba(251, 191, 36, 0.25), transparent)',
-      badge: '1st Place',
-    },
-    {
-  id: 2,
+  id: 1,
   icon: <FaMedal className="text-4xl text-blue-500" />,
   title: 'Technical Paper Competition Winner',
   subtitle: 'Scroll’s 2025 – Ajay Kumar Garg Engineering College, Ghaziabad',
@@ -173,7 +166,29 @@ const Home = () => {
   gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), transparent)',
   badge: '1st Position',
 },
+ {
+  id: 2,
+  icon: <FaMedal className="text-4xl text-yellow-500" />,
+  title: 'Tech Fusion Ideathon – Runner Up',
+  subtitle: 'Tech Fusion IPEM College, Ghaziabad',
+  detail: 'Achieved 2nd position in the Tech Fusion Ideathon for presenting an innovative solution with effective problem analysis, creativity, and execution under competitive evaluation.',
+  borderColor: 'border-yellow-500',
+  gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.25), transparent)',
+  badge: '2nd Position',
+},
 
+    
+    {
+      id: 3,
+      icon: <FaTrophy className="text-4xl text-yellow-400" />,
+      title: 'Quiz Competition Winner',
+      subtitle: 'Gambed Quiz Competition 2024',
+      detail: 'Won first place in competitive programming and general knowledge quiz',
+      borderColor: 'border-yellow-400',
+      gradient: 'linear-gradient(135deg, rgba(251, 191, 36, 0.25), transparent)',
+      badge: '1st Place',
+    },
+   
   ], []);
 
   // Optimized event handlers with useCallback
