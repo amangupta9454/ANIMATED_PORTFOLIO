@@ -10,7 +10,8 @@ import agri from "../assets/agri.jpg";
 import coach from "../assets/coach.jpg";
 import calculator from "../assets/cross.png";
 import image from "../assets/image.png";
-import hero from "../assets/heroImage.png";
+import hero from "../assets/heroImage.jpg";
+import codeanova from "../assets/codeanova.jpg"
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -84,6 +85,15 @@ const Home = () => {
     },
     {
       id: 2,
+      title: "AI Winter Internship",
+      company: "Mirai Schools of Technology",
+      duration: "Dec 2025 - Jan 2026",
+      description:
+        "Developed AI-powered solutions using modern AI tools and automated end-to-end workflows with n8n, integrating APIs and trigger-based processes to reduce manual effort and improve efficiency.",
+     },    
+
+    {
+      id: 3,
       title: "Frontend Development Internship",
       company: "Edunet Foundation",
       duration: "20 Aug 2025 - 10 Oct 2025",
@@ -92,7 +102,7 @@ const Home = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Mern Stack Development Internship",
       company: "CodSoft",
       duration: "10 Sep 2024 - 10 Oct 2024",
@@ -100,7 +110,7 @@ const Home = () => {
         "Worked on full-stack web applications using MongoDB, Express, React, and Node.js, gaining hands-on experience in building scalable solutions.",
     },
     {
-      id: 4,
+      id: 5,
       title: "Frontend Web Development Internship",
       company: "CodeAlpha",
       duration: "15 Sep 2024 - 15 Oct 2024",
@@ -268,8 +278,8 @@ const Home = () => {
       name: "AI CAREER COACH WEBSITE",
       description: "Developed an AI-powered career coach web app using MERN stack and Gemini API for personalized roadmaps and resume generation.",
       image: coach,
-      sourceCode: "https://github.com/amangupta9454/AI-COACH",
-      livePreview: "https://mindstep.netlify.app/",
+      sourceCode: "https://github.com/amangupta9454/AUTHENTICATION-SYSTEM",
+      livePreview: "https://auth-by-aman.netlify.app/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "GEMINI API"],
       featured: true,
     },
@@ -278,8 +288,8 @@ const Home = () => {
       name: "FARMIO-Local Roots, Fresh Routes",
       description: "A fully functional FARMER-CONSUMER AGRICULTURE website with modern UI and custom features.",
       image: agri,
-      sourceCode: "https://github.com/amangupta9454/FARMIO",
-      livePreview: "https://agrifarmio.netlify.app/",
+      sourceCode: "https://github.com/amangupta9454/AGRI-MARKET",
+      livePreview: "https://agri-farmio.netlify.app/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "OPENAI API", "DATA.GOV API"],
       featured: true,
     },
@@ -288,13 +298,25 @@ const Home = () => {
       name: "TECH FEST REGISTRATION WEBSITE",
       description: "A fully functional college technical fest website with modern UI and custom features.",
       image: calculator,
-      sourceCode: "https://github.com/amangupta9454/crossroads-2025",
-      livePreview: "https://hiet-crossroads.netlify.app/",
+      sourceCode: "https://github.com/amangupta9454/CROSSROADS-2026",
+      livePreview: "https://hiet-crossroads.online/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS"],
       featured: false,
     },
     {
       id: 4,
+      name: "CODE-A-NOVA – COLLEGE TECH FEST WEBSITE",
+      description:
+        "A startup project focused on providing internships and practical training to students, featuring program listings, student registration, and a modern, responsive web interface.",
+      image: codeanova,
+      sourceCode: "https://github.com/amangupta9454/WEBSITE",
+      livePreview: "https://code-a-nova.online/",
+      tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS"],
+      featured: true,
+    },
+
+    {
+      id: 5,
       name: "TEAMUP PLATFORM FOR HACKATHON ENTHUSIASTS",
       description: "A fully functional Teamup platform website with modern UI and custom features.",
       image: image,
