@@ -77,11 +77,11 @@ const Home = () => {
   const experiences = useMemo(() => [
     {
       id: 1,
-      title: "Backend Development Internship",
-      company: "Tranquiex Technology",
-      duration: "10 Sep 2025 - Ongoing",
+      title: "MERN Stack Development Internship",
+      company: "CODE-A-NOVA",
+      duration: "05 Jan 2026 - Ongoing",
       description:
-        "Developing backend systems using Node.js, Express, and MongoDB to build robust APIs, efficiently manage databases, troubleshoot server-side issues, and optimize performance and scalability.",
+        "Contributing to the development of a startup project focused on providing internships and practical training to students, featuring program listings, student registration, and a modern, responsive web interface.",
     },
     {
       id: 2,
@@ -279,7 +279,7 @@ const Home = () => {
       description: "Developed an AI-powered career coach web app using MERN stack and Gemini API for personalized roadmaps and resume generation.",
       image: coach,
       sourceCode: "https://github.com/amangupta9454/AUTHENTICATION-SYSTEM",
-      livePreview: "https://auth-by-aman.netlify.app/",
+      livePreview: "https://mindstep.netlify.app/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "GEMINI API"],
       featured: true,
     },
@@ -305,7 +305,7 @@ const Home = () => {
     },
     {
       id: 4,
-      name: "CODE-A-NOVA – COLLEGE TECH FEST WEBSITE",
+      name: "CODE-A-NOVA – INTERNSHIP AND TRAINING PLATFORM",
       description:
         "A startup project focused on providing internships and practical training to students, featuring program listings, student registration, and a modern, responsive web interface.",
       image: codeanova,
@@ -317,12 +317,12 @@ const Home = () => {
 
     {
       id: 5,
-      name: "TEAMUP PLATFORM FOR HACKATHON ENTHUSIASTS",
-      description: "A fully functional Teamup platform website with modern UI and custom features.",
+      name: "College Technical Club Website",
+      description: "A fully functional college technical club website with modern UI and custom features.",
       image: image,
-      sourceCode: "https://github.com/amangupta9454/college",
-      livePreview: "https://hietteam.netlify.app/",
-      tags: ["MERN STACK"],
+      sourceCode: "https://github.com/amangupta9454/TECHFUSION-HIET",
+      livePreview: "https://techfusion-hiet.netlify.app/",
+      tags: ["REACT.JS", "TAILWIND CSS", "FRAMER", "GSAP"],
       featured: false,
     }
   ], []);
