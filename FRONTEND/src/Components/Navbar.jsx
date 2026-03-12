@@ -15,7 +15,7 @@ const Navbar = () => {
           <a href="#home" className="hover:text-blue-300 transition-colors duration-300">Portfolio</a>
         </div>
         <ul className={`md:flex md:items-center md:space-x-8 ${isOpen ? 'block' : 'hidden md:block'} absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent p-6 md:p-0 transition-all duration-300 ease-in-out`}>
-          {['Home', 'About',  'Projects', 'Skill', 'Experience', 'Qualification', 'Contact'].map((item) => (
+          {['Home', 'About', 'Projects', 'Skill', 'Experience', 'Qualification', 'Contact'].map((item) => (
             <li key={item} className="py-3 md:py-0">
               <a
                 href={`#${item.toLowerCase()}`}

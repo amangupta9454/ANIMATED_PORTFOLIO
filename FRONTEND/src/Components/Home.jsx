@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback, useMemo } from "react";
-import { FaLinkedin, FaDownload, FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaBriefcase, FaCalendarAlt, FaBuilding, FaGraduationCap, FaBookOpen, FaSchool, FaSeedling, FaTrophy, FaEnvelope, FaPhone, FaMapMarkerAlt, FaMedal, FaProjectDiagram, FaCloud  } from "react-icons/fa";
+import { FaLinkedin, FaDownload, FaGithub, FaExternalLinkAlt, FaCode, FaStar, FaBriefcase, FaCalendarAlt, FaBuilding, FaGraduationCap, FaBookOpen, FaSchool, FaSeedling, FaTrophy, FaEnvelope, FaPhone, FaMapMarkerAlt, FaMedal, FaProjectDiagram, FaCloud } from "react-icons/fa";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaDatabase, FaCuttlefish, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiPython, SiCplusplus, SiExpress } from "react-icons/si";
 import Typed from "typed.js";
@@ -12,6 +12,7 @@ import calculator from "../assets/cross.png";
 import image from "../assets/image.png";
 import hero from "../assets/heroImage.jpg";
 import codeanova from "../assets/codeanova.jpg"
+import matru from "../assets/matru.png";
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -35,15 +36,15 @@ const Home = () => {
   const experienceAnimationFrameRef = useRef(null);
   const qualificationAnimationFrameRef = useRef(null);
   const ctaAnimationFrameRef = useRef(null);
-  
+
   // Mobile detection and performance optimization
   const isMobile = useMemo(() => {
     return typeof window !== 'undefined' && window.innerWidth <= 768;
   }, []);
-  
+
   const isReducedMotion = useMemo(() => {
-    return typeof window !== 'undefined' && 
-           window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   }, []);
 
   // Optimized particle count based on device
@@ -55,22 +56,22 @@ const Home = () => {
 
   // Skills data
   const skills = useMemo(() => [
-  { name: "HTML5", icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
-  { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" />, proficiency: 50 },
-  { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" />, proficiency: 80 },
-  { name: "React.js", icon: <FaReact className="text-cyan-400" />, proficiency: 70 },
-  { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" />, proficiency: 60 },
-  { name: "Express.js", icon: <SiExpress className="text-gray-300" />, proficiency: 85 },
-  { name: "Node.js", icon: <FaNodeJs className="text-green-500" />, proficiency: 85 },
-  { name: "MongoDB", icon: <FaDatabase className="text-green-700" />, proficiency: 82 },
-  { name: "Nodemailer", icon: <FaEnvelope className="text-blue-400" />, proficiency: 90 },
-  { name: "C", icon: <FaCuttlefish className="text-blue-400" />, proficiency: 50 },
-  { name: "C++", icon: <SiCplusplus className="text-indigo-500" />, proficiency: 10 },
-  { name: "Python", icon: <SiPython className="text-yellow-500" />, proficiency: 70 },
-  { name: "DSA (Basic)", icon: <FaGitAlt className="text-orange-400" />, proficiency: 5 },
-  { name: "System Designing", icon: <FaProjectDiagram className="text-purple-500" />, proficiency: 20 },
-  { name: "Cloud Computing (Basic)", icon: <FaCloud className="text-sky-400" />, proficiency: 20 },
-], []);
+    { name: "HTML5", icon: <FaHtml5 className="text-orange-600" />, proficiency: 90 },
+    { name: "CSS3", icon: <FaCss3Alt className="text-blue-600" />, proficiency: 50 },
+    { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" />, proficiency: 80 },
+    { name: "React.js", icon: <FaReact className="text-cyan-400" />, proficiency: 70 },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" />, proficiency: 60 },
+    { name: "Express.js", icon: <SiExpress className="text-gray-300" />, proficiency: 85 },
+    { name: "Node.js", icon: <FaNodeJs className="text-green-500" />, proficiency: 85 },
+    { name: "MongoDB", icon: <FaDatabase className="text-green-700" />, proficiency: 82 },
+    { name: "Nodemailer", icon: <FaEnvelope className="text-blue-400" />, proficiency: 90 },
+    { name: "C", icon: <FaCuttlefish className="text-blue-400" />, proficiency: 50 },
+    { name: "C++", icon: <SiCplusplus className="text-indigo-500" />, proficiency: 10 },
+    { name: "Python", icon: <SiPython className="text-yellow-500" />, proficiency: 70 },
+    { name: "DSA (Basic)", icon: <FaGitAlt className="text-orange-400" />, proficiency: 5 },
+    { name: "System Designing", icon: <FaProjectDiagram className="text-purple-500" />, proficiency: 20 },
+    { name: "Cloud Computing (Basic)", icon: <FaCloud className="text-sky-400" />, proficiency: 20 },
+  ], []);
 
 
   // Experience data
@@ -87,10 +88,10 @@ const Home = () => {
       id: 2,
       title: "AI Winter Internship",
       company: "Mirai Schools of Technology",
-      duration: "Dec 2025 - Jan 2026",
+      duration: "Jan 2026 - Feb 2026",
       description:
         "Developed AI-powered solutions using modern AI tools and automated end-to-end workflows with n8n, integrating APIs and trigger-based processes to reduce manual effort and improve efficiency.",
-     },    
+    },
 
     {
       id: 3,
@@ -117,7 +118,7 @@ const Home = () => {
       description:
         "Developed advanced websites with a focus on user experience and maintainable code.",
     },
-   
+
   ], []);
 
   // Qualification data
@@ -168,28 +169,38 @@ const Home = () => {
   const achievements = useMemo(() => [
     {
   id: 1,
-  icon: <FaMedal className="text-4xl text-blue-500" />,
-  title: 'Technical Paper Competition Winner',
-  subtitle: 'Scroll’s 2025 – Ajay Kumar Garg Engineering College, Ghaziabad',
-  detail: 'Secured 1st position in a National Technical Paper Writing Competition for the research paper titled "AI-Powered Skin Cancer Detection Using Deep Learning" under the domain of AI in Healthcare.',
-  borderColor: 'border-blue-500',
-  gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), transparent)',
-  badge: '1st Position',
-},
- {
-  id: 2,
-  icon: <FaMedal className="text-4xl text-yellow-500" />,
-  title: 'Tech Fusion Ideathon – Runner Up',
-  subtitle: 'Tech Fusion IPEM College, Ghaziabad',
-  detail: 'Achieved 2nd position in the Tech Fusion Ideathon for presenting an innovative solution with effective problem analysis, creativity, and execution under competitive evaluation.',
+  icon: <FaTrophy className="text-4xl text-yellow-500" />,
+  title: 'Project Exhibition Winner',
+  subtitle: 'Crossroads 2026 – HIET Ghaziabad',
+  detail: 'Secured 1st position in the Project Exhibition at Crossroads 2026 as part of Team Research Radiance. Presented an innovative real-world problem-solving project and was recognized for creativity, technical implementation, and impactful presentation.',
   borderColor: 'border-yellow-500',
   gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.25), transparent)',
-  badge: '2nd Position',
+  badge: '1st Position',
 },
-
-    
+    {
+      id: 2,
+      icon: <FaMedal className="text-4xl text-blue-500" />,
+      title: 'Technical Paper Competition Winner',
+      subtitle: 'Scroll’s 2025 – Ajay Kumar Garg Engineering College, Ghaziabad',
+      detail: 'Secured 1st position in a National Technical Paper Writing Competition for the research paper titled "AI-Powered Skin Cancer Detection Using Deep Learning" under the domain of AI in Healthcare.',
+      borderColor: 'border-blue-500',
+      gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.25), transparent)',
+      badge: '1st Position',
+    },
     {
       id: 3,
+      icon: <FaMedal className="text-4xl text-yellow-500" />,
+      title: 'Tech Fusion Ideathon – Runner Up',
+      subtitle: 'Tech Fusion IPEM College, Ghaziabad',
+      detail: 'Achieved 2nd position in the Tech Fusion Ideathon for presenting an innovative solution with effective problem analysis, creativity, and execution under competitive evaluation.',
+      borderColor: 'border-yellow-500',
+      gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.25), transparent)',
+      badge: '2nd Position',
+    },
+
+
+    {
+      id: 4,
       icon: <FaTrophy className="text-4xl text-yellow-400" />,
       title: 'Quiz Competition Winner',
       subtitle: 'Gambed Quiz Competition 2024',
@@ -198,7 +209,7 @@ const Home = () => {
       gradient: 'linear-gradient(135deg, rgba(251, 191, 36, 0.25), transparent)',
       badge: '1st Place',
     },
-   
+
   ], []);
 
   // Optimized event handlers with useCallback
@@ -274,7 +285,17 @@ const Home = () => {
   // Project data
   const projects = useMemo(() => [
     {
-      id: 1,
+     id: 1,
+      name: "MaaCare — Maternal Healthcare Platform",
+      description: "An AI-powered maternal healthcare platform providing personalized support, resources, and community for expectant mothers, leveraging MERN stack and Gemini API for intelligent features.",
+      image: matru,
+      sourceCode: "https://github.com/amangupta9454/MATRUCARE-AI",
+      livePreview: "https://matrucare-ai.netlify.app/",
+      tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "Socket.io","Jitsi"],
+      featured: true,
+    },
+    {
+      id: 2,
       name: "AI CAREER COACH WEBSITE",
       description: "Developed an AI-powered career coach web app using MERN stack and Gemini API for personalized roadmaps and resume generation.",
       image: coach,
@@ -284,7 +305,7 @@ const Home = () => {
       featured: true,
     },
     {
-      id: 2,
+      id: 3,
       name: "FARMIO-Local Roots, Fresh Routes",
       description: "A fully functional FARMER-CONSUMER AGRICULTURE website with modern UI and custom features.",
       image: agri,
@@ -294,7 +315,7 @@ const Home = () => {
       featured: true,
     },
     {
-      id: 3,
+      id: 4,
       name: "TECH FEST REGISTRATION WEBSITE",
       description: "A fully functional college technical fest website with modern UI and custom features.",
       image: calculator,
@@ -304,7 +325,7 @@ const Home = () => {
       featured: false,
     },
     {
-      id: 4,
+      id: 5,
       name: "CODE-A-NOVA – INTERNSHIP AND TRAINING PLATFORM",
       description:
         "A startup project focused on providing internships and practical training to students, featuring program listings, student registration, and a modern, responsive web interface.",
@@ -316,7 +337,7 @@ const Home = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       name: "College Technical Club Website",
       description: "A fully functional college technical club website with modern UI and custom features.",
       image: image,
@@ -372,68 +393,68 @@ const Home = () => {
     });
 
     // Enhanced reveal animations with staggered timing
-    sr.reveal(".sr-fade", { 
-      origin: "bottom", 
+    sr.reveal(".sr-fade", {
+      origin: "bottom",
       delay: 100,
       distance: "40px",
       duration: 800,
       scale: 0.9
     });
-    sr.reveal(".sr-left", { 
-      origin: "left", 
+    sr.reveal(".sr-left", {
+      origin: "left",
       delay: 200,
       distance: "60px",
       duration: 900,
       rotate: { x: 0, y: 0, z: 5 }
     });
-    sr.reveal(".sr-right", { 
-      origin: "right", 
+    sr.reveal(".sr-right", {
+      origin: "right",
       delay: 300,
       distance: "60px",
       duration: 900,
       rotate: { x: 0, y: 0, z: -5 }
     });
-    sr.reveal(".sr-about-heading", { 
-      origin: "top", 
+    sr.reveal(".sr-about-heading", {
+      origin: "top",
       delay: 150,
       distance: "50px",
       duration: 1000,
       scale: 0.8
     });
-    sr.reveal(".sr-about-text", { 
-      origin: "left", 
+    sr.reveal(".sr-about-text", {
+      origin: "left",
       delay: 250,
       distance: "40px",
       duration: 800,
       interval: 100
     });
-    sr.reveal(".sr-about-image", { 
-      origin: "right", 
+    sr.reveal(".sr-about-image", {
+      origin: "right",
       delay: 350,
       distance: "50px",
       duration: 1000,
       rotate: { x: 0, y: 10, z: 0 }
     });
-    
+
     // Additional reveal animations for enhanced elements
-    sr.reveal(".sr-button", { 
-      origin: "bottom", 
+    sr.reveal(".sr-button", {
+      origin: "bottom",
       delay: 400,
       distance: "30px",
       duration: 600,
       interval: 150,
       scale: 0.9
     });
-    sr.reveal(".sr-skill-card", { 
-      origin: "bottom", 
+    sr.reveal(".sr-skill-card", {
+      origin: "bottom",
       delay: 200,
       distance: "40px",
       duration: 700,
       interval: 100,
       scale: 0.95
     });
-    sr.reveal(".sr-project-card", { 
-      origin: "bottom", 
+    sr.reveal(".sr-project-card", {
+      origin: "bottom",
       delay: 150,
       distance: "50px",
       duration: 800,
@@ -441,8 +462,8 @@ const Home = () => {
       scale: 0.9,
       rotate: { x: 0, y: 0, z: 2 }
     });
-    sr.reveal(".sr-project-heading", { 
-      origin: "top", 
+    sr.reveal(".sr-project-heading", {
+      origin: "top",
       delay: 100,
       distance: "40px",
       duration: 900,
@@ -450,15 +471,15 @@ const Home = () => {
     });
 
     // Skills section animations
-    sr.reveal(".sr-skills-heading", { 
-      origin: "top", 
+    sr.reveal(".sr-skills-heading", {
+      origin: "top",
       delay: 100,
       distance: "40px",
       duration: 900,
       scale: 0.8
     });
-    sr.reveal(".sr-skills-card", { 
-      origin: "bottom", 
+    sr.reveal(".sr-skills-card", {
+      origin: "bottom",
       delay: 100,
       distance: "30px",
       duration: 600,
@@ -467,15 +488,15 @@ const Home = () => {
     });
 
     // Experience section animations
-    sr.reveal(".sr-experience-heading", { 
-      origin: "top", 
+    sr.reveal(".sr-experience-heading", {
+      origin: "top",
       delay: 120,
       distance: "40px",
       duration: 900,
       scale: 0.8
     });
-    sr.reveal(".sr-experience-card", { 
-      origin: "left", 
+    sr.reveal(".sr-experience-card", {
+      origin: "left",
       delay: 150,
       distance: "60px",
       duration: 800,
@@ -483,8 +504,8 @@ const Home = () => {
       scale: 0.9,
       rotate: { x: 0, y: 0, z: 1 }
     });
-    sr.reveal(".sr-experience-timeline", { 
-      origin: "right", 
+    sr.reveal(".sr-experience-timeline", {
+      origin: "right",
       delay: 100,
       distance: "30px",
       duration: 700,
@@ -492,15 +513,15 @@ const Home = () => {
     });
 
     // Qualification section animations
-    sr.reveal(".sr-qualification-heading", { 
-      origin: "top", 
+    sr.reveal(".sr-qualification-heading", {
+      origin: "top",
       delay: 100,
       distance: "40px",
       duration: 900,
       scale: 0.8
     });
-    sr.reveal(".sr-qualification-card", { 
-      origin: "bottom", 
+    sr.reveal(".sr-qualification-card", {
+      origin: "bottom",
       delay: 120,
       distance: "50px",
       duration: 800,
@@ -508,8 +529,8 @@ const Home = () => {
       scale: 0.9,
       rotate: { x: 0, y: 0, z: 1 }
     });
-    sr.reveal(".sr-achievement-card", { 
-      origin: "right", 
+    sr.reveal(".sr-achievement-card", {
+      origin: "right",
       delay: 200,
       distance: "60px",
       duration: 900,
@@ -518,23 +539,23 @@ const Home = () => {
     });
 
     // CTA section animations
-    sr.reveal(".sr-cta-heading", { 
-      origin: "top", 
+    sr.reveal(".sr-cta-heading", {
+      origin: "top",
       delay: 100,
       distance: "40px",
       duration: 900,
       scale: 0.8
     });
-    sr.reveal(".sr-cta-content", { 
-      origin: "bottom", 
+    sr.reveal(".sr-cta-content", {
+      origin: "bottom",
       delay: 150,
       distance: "30px",
       duration: 700,
       interval: 100,
       scale: 0.95
     });
-    sr.reveal(".sr-cta-button", { 
-      origin: "bottom", 
+    sr.reveal(".sr-cta-button", {
+      origin: "bottom",
       delay: 200,
       distance: "30px",
       duration: 600,
@@ -566,12 +587,12 @@ const Home = () => {
     // Optimized canvas animation for hero section
     const canvas = canvasRef.current;
     const mouse = { x: undefined, y: undefined };
-    
+
     if (canvas && particleCount > 0) {
       const ctx = canvas.getContext("2d");
       let w = canvas.width = canvas.offsetWidth;
       let h = canvas.height = canvas.offsetHeight;
-      
+
       const particles = Array.from({ length: particleCount }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -594,7 +615,7 @@ const Home = () => {
         lastTime = currentTime;
 
         ctx.clearRect(0, 0, w, h);
-        
+
         // Solid background instead of gradient for better performance on mobile
         ctx.fillStyle = isDarkTheme ? "#0f0f23" : "#f0f8ff";
         ctx.fillRect(0, 0, w, h);
@@ -663,7 +684,7 @@ const Home = () => {
         canvas.addEventListener("mousemove", mouseMoveHandler);
         canvas.addEventListener("mouseleave", mouseOutHandler);
       }
-      
+
       animationFrameRef.current = requestAnimationFrame(animateParticles);
     }
 
@@ -673,7 +694,7 @@ const Home = () => {
       const ctx = aboutCanvas.getContext("2d");
       let w = aboutCanvas.width = aboutCanvas.offsetWidth;
       let h = aboutCanvas.height = Math.min(600, window.innerHeight);
-      
+
       const particles = Array.from({ length: Math.floor(particleCount * 0.7) }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -729,12 +750,12 @@ const Home = () => {
     // Optimized projects section canvas
     const projectsCanvas = projectsCanvasRef.current;
     const projectsMouse = { x: undefined, y: undefined };
-    
+
     if (projectsCanvas && particleCount > 0) {
       const ctx = projectsCanvas.getContext("2d");
       let w = projectsCanvas.width = projectsCanvas.offsetWidth;
       let h = projectsCanvas.height = projectsCanvas.offsetHeight;
-      
+
       const particles = Array.from({ length: Math.floor(particleCount * 0.8) }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -816,13 +837,13 @@ const Home = () => {
           ctx.fillStyle = particle.color;
           ctx.globalAlpha = particle.alpha;
           ctx.fill();
-          
+
           // Add glow
           ctx.beginPath();
           ctx.arc(particle.x, particle.y, particle.radius * 1.5, 0, Math.PI * 2);
           ctx.globalAlpha = particle.alpha * 0.3;
           ctx.fill();
-          
+
           ctx.globalAlpha = 1;
         });
 
@@ -838,19 +859,19 @@ const Home = () => {
         projectsCanvas.addEventListener("mousemove", projectsMouseMoveHandler);
         projectsCanvas.addEventListener("mouseleave", projectsMouseOutHandler);
       }
-      
+
       projectsAnimationFrameRef.current = requestAnimationFrame(animateProjectsParticles);
     }
 
     // Optimized skills section canvas with triangular/hexagonal particles
     const skillsCanvas = skillsCanvasRef.current;
     const skillsMouse = { x: undefined, y: undefined };
-    
+
     if (skillsCanvas && particleCount > 0) {
       const ctx = skillsCanvas.getContext("2d");
       let w = skillsCanvas.width = skillsCanvas.offsetWidth;
       let h = skillsCanvas.height = skillsCanvas.offsetHeight;
-      
+
       const particles = Array.from({ length: Math.floor(particleCount * 0.9) }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -923,12 +944,12 @@ const Home = () => {
                 ctx.beginPath();
                 ctx.moveTo(particleA.x, particleA.y);
                 ctx.lineTo(particleB.x, particleB.y);
-                
+
                 // Gradient connection lines
                 const gradient = ctx.createLinearGradient(particleA.x, particleA.y, particleB.x, particleB.y);
                 gradient.addColorStop(0, `rgba(${isDarkTheme ? "147,51,234" : "124,58,237"}, ${(150 - dist) / 150 * 0.3})`); // Purple
                 gradient.addColorStop(1, `rgba(${isDarkTheme ? "59,130,246" : "37,99,235"}, ${(150 - dist) / 150 * 0.3})`); // Blue
-                
+
                 ctx.strokeStyle = gradient;
                 ctx.lineWidth = 1;
                 ctx.stroke();
@@ -978,13 +999,13 @@ const Home = () => {
           // Draw particle
           ctx.fillStyle = particle.color;
           ctx.globalAlpha = particle.alpha;
-          
+
           if (particle.shape === 'triangle') {
             drawTriangle(ctx, particle.x, particle.y, particle.size, particle.rotation);
           } else {
             drawHexagon(ctx, particle.x, particle.y, particle.size, particle.rotation);
           }
-          
+
           // Add glow effect
           ctx.globalAlpha = particle.alpha * 0.4;
           if (particle.shape === 'triangle') {
@@ -992,7 +1013,7 @@ const Home = () => {
           } else {
             drawHexagon(ctx, particle.x, particle.y, particle.size * 1.3, particle.rotation);
           }
-          
+
           ctx.globalAlpha = 1;
         });
 
@@ -1008,19 +1029,19 @@ const Home = () => {
         skillsCanvas.addEventListener("mousemove", skillsMouseMoveHandler);
         skillsCanvas.addEventListener("mouseleave", skillsMouseOutHandler);
       }
-      
+
       skillsAnimationFrameRef.current = requestAnimationFrame(animateSkillsParticles);
     }
 
     // Optimized experience section canvas with diamond-shaped particles
     const experienceCanvas = experienceCanvasRef.current;
     const experienceMouse = { x: undefined, y: undefined };
-    
+
     if (experienceCanvas && particleCount > 0) {
       const ctx = experienceCanvas.getContext("2d");
       let w = experienceCanvas.width = experienceCanvas.offsetWidth;
       let h = experienceCanvas.height = experienceCanvas.offsetHeight;
-      
+
       const particles = Array.from({ length: Math.floor(particleCount * 0.85) }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -1067,7 +1088,7 @@ const Home = () => {
           const y1 = size * Math.sin(angle1);
           const x2 = (size * 0.4) * Math.cos(angle2 - Math.PI / 5);
           const y2 = (size * 0.4) * Math.sin(angle2 - Math.PI / 5);
-          
+
           if (i === 0) ctx.moveTo(x1, y1);
           else ctx.lineTo(x1, y1);
           ctx.lineTo(x2, y2);
@@ -1099,12 +1120,12 @@ const Home = () => {
                 ctx.beginPath();
                 ctx.moveTo(particleA.x, particleA.y);
                 ctx.lineTo(particleB.x, particleB.y);
-                
+
                 // Gradient connection lines with warm colors
                 const gradient = ctx.createLinearGradient(particleA.x, particleA.y, particleB.x, particleB.y);
                 gradient.addColorStop(0, `rgba(${isDarkTheme ? "251,146,60" : "234,88,12"}, ${(130 - dist) / 130 * 0.25})`); // Orange
                 gradient.addColorStop(1, `rgba(${isDarkTheme ? "239,68,68" : "220,38,38"}, ${(130 - dist) / 130 * 0.25})`); // Red
-                
+
                 ctx.strokeStyle = gradient;
                 ctx.lineWidth = 0.8;
                 ctx.stroke();
@@ -1155,13 +1176,13 @@ const Home = () => {
           // Draw particle based on type
           ctx.fillStyle = particle.color;
           ctx.globalAlpha = particle.alpha;
-          
+
           if (particle.sparkle) {
             drawStar(ctx, particle.x, particle.y, particle.size * 0.8, particle.rotation);
           } else {
             drawDiamond(ctx, particle.x, particle.y, particle.size, particle.rotation);
           }
-          
+
           // Add enhanced glow effect
           ctx.globalAlpha = particle.alpha * 0.5;
           if (particle.sparkle) {
@@ -1169,14 +1190,14 @@ const Home = () => {
           } else {
             drawDiamond(ctx, particle.x, particle.y, particle.size * 1.3, particle.rotation);
           }
-          
+
           // Extra sparkle effect for special particles
           if (particle.sparkle && Math.random() > 0.95) {
             ctx.globalAlpha = 0.8;
             ctx.fillStyle = `hsl(${Math.random() * 60 + 40}, 90%, 80%)`; // Bright yellow/gold
             drawStar(ctx, particle.x, particle.y, particle.size * 0.5, -particle.rotation);
           }
-          
+
           ctx.globalAlpha = 1;
         });
 
@@ -1192,19 +1213,19 @@ const Home = () => {
         experienceCanvas.addEventListener("mousemove", experienceMouseMoveHandler);
         experienceCanvas.addEventListener("mouseleave", experienceMouseOutHandler);
       }
-      
+
       experienceAnimationFrameRef.current = requestAnimationFrame(animateExperienceParticles);
     }
 
     // Optimized qualification section canvas with flowing particles
     const qualificationCanvas = qualificationCanvasRef.current;
     const qualificationMouse = { x: undefined, y: undefined };
-    
+
     if (qualificationCanvas && particleCount > 0) {
       const ctx = qualificationCanvas.getContext("2d");
       let w = qualificationCanvas.width = qualificationCanvas.offsetWidth;
       let h = qualificationCanvas.height = qualificationCanvas.offsetHeight;
-      
+
       const particles = Array.from({ length: Math.floor(particleCount * 0.75) }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -1244,12 +1265,12 @@ const Home = () => {
                 ctx.beginPath();
                 ctx.moveTo(particleA.x, particleA.y);
                 ctx.lineTo(particleB.x, particleB.y);
-                
+
                 // Gradient connection lines with cool colors
                 const gradient = ctx.createLinearGradient(particleA.x, particleA.y, particleB.x, particleB.y);
                 gradient.addColorStop(0, `rgba(${isDarkTheme ? "59,130,246" : "37,99,235"}, ${(120 - dist) / 120 * 0.2})`); // Blue
                 gradient.addColorStop(1, `rgba(${isDarkTheme ? "34,197,94" : "16,185,129"}, ${(120 - dist) / 120 * 0.2})`); // Green
-                
+
                 ctx.strokeStyle = gradient;
                 ctx.lineWidth = 0.6;
                 ctx.stroke();
@@ -1298,7 +1319,7 @@ const Home = () => {
           particle.trail.forEach((point, index) => {
             const trailAlpha = (index / particle.trailLength) * particle.alpha * 0.6;
             const trailSize = particle.radius * (index / particle.trailLength);
-            
+
             ctx.beginPath();
             ctx.arc(point.x, point.y, trailSize, 0, Math.PI * 2);
             ctx.fillStyle = particle.color;
@@ -1312,13 +1333,13 @@ const Home = () => {
           ctx.fillStyle = particle.color;
           ctx.globalAlpha = particle.alpha;
           ctx.fill();
-          
+
           // Add glow effect
           ctx.beginPath();
           ctx.arc(particle.x, particle.y, particle.radius * 1.8, 0, Math.PI * 2);
           ctx.globalAlpha = particle.alpha * 0.3;
           ctx.fill();
-          
+
           ctx.globalAlpha = 1;
         });
 
@@ -1334,19 +1355,19 @@ const Home = () => {
         qualificationCanvas.addEventListener("mousemove", qualificationMouseMoveHandler);
         qualificationCanvas.addEventListener("mouseleave", qualificationMouseOutHandler);
       }
-      
+
       qualificationAnimationFrameRef.current = requestAnimationFrame(animateQualificationParticles);
     }
 
     // Optimized CTA section canvas with energetic star particles
     const ctaCanvas = ctaCanvasRef.current;
     const ctaMouse = { x: undefined, y: undefined };
-    
+
     if (ctaCanvas && particleCount > 0) {
       const ctx = ctaCanvas.getContext("2d");
       let w = ctaCanvas.width = ctaCanvas.offsetWidth;
       let h = ctaCanvas.height = ctaCanvas.offsetHeight;
-      
+
       const particles = Array.from({ length: Math.floor(particleCount * 0.95) }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
@@ -1370,7 +1391,7 @@ const Home = () => {
         ctx.save();
         ctx.translate(x, y);
         ctx.rotate((rotation * Math.PI) / 180);
-        
+
         // Main star
         ctx.beginPath();
         for (let i = 0; i < 6; i++) {
@@ -1378,19 +1399,19 @@ const Home = () => {
           const angle2 = ((i + 1) * 2 * Math.PI) / 6;
           const outerRadius = size * energy;
           const innerRadius = size * 0.4 * energy;
-          
+
           const x1 = outerRadius * Math.cos(angle1);
           const y1 = outerRadius * Math.sin(angle1);
           const x2 = innerRadius * Math.cos(angle2 - Math.PI / 6);
           const y2 = innerRadius * Math.sin(angle2 - Math.PI / 6);
-          
+
           if (i === 0) ctx.moveTo(x1, y1);
           else ctx.lineTo(x1, y1);
           ctx.lineTo(x2, y2);
         }
         ctx.closePath();
         ctx.fill();
-        
+
         ctx.restore();
       };
 
@@ -1416,14 +1437,14 @@ const Home = () => {
                 ctx.beginPath();
                 ctx.moveTo(particleA.x, particleA.y);
                 ctx.lineTo(particleB.x, particleB.y);
-                
+
                 // Rainbow gradient connection lines
                 const gradient = ctx.createLinearGradient(particleA.x, particleA.y, particleB.x, particleB.y);
                 const hue1 = (currentTime * 0.1 + i * 30) % 360;
                 const hue2 = (currentTime * 0.1 + i * 30 + 60) % 360;
                 gradient.addColorStop(0, `hsla(${hue1}, 80%, ${isDarkTheme ? 70 : 50}%, ${(160 - dist) / 160 * 0.4})`);
                 gradient.addColorStop(1, `hsla(${hue2}, 80%, ${isDarkTheme ? 70 : 50}%, ${(160 - dist) / 160 * 0.4})`);
-                
+
                 ctx.strokeStyle = gradient;
                 ctx.lineWidth = 1.2;
                 ctx.stroke();
@@ -1455,7 +1476,7 @@ const Home = () => {
           particle.y += particle.dy;
           particle.rotation += particle.dr;
           particle.alpha += particle.pulse;
-          
+
           // Dynamic energy fluctuation
           particle.energy += (Math.random() - 0.5) * 0.02;
           particle.energy = Math.max(0.3, Math.min(1.2, particle.energy));
@@ -1484,20 +1505,20 @@ const Home = () => {
           // Draw particle
           ctx.fillStyle = particle.color;
           ctx.globalAlpha = particle.alpha;
-          
+
           drawEnergeticStar(ctx, particle.x, particle.y, particle.size, particle.rotation, particle.energy);
-          
+
           // Add intense glow effect
           ctx.globalAlpha = particle.alpha * 0.6;
           drawEnergeticStar(ctx, particle.x, particle.y, particle.size * 1.5, particle.rotation, particle.energy * 0.8);
-          
+
           // Extra sparkle effect for high energy particles
           if (particle.energy > 0.9 && Math.random() > 0.92) {
             ctx.globalAlpha = 0.9;
             ctx.fillStyle = `hsl(${(hue + 180) % 360}, 100%, 90%)`; // Complementary color
             drawEnergeticStar(ctx, particle.x, particle.y, particle.size * 0.3, -particle.rotation, 1);
           }
-          
+
           ctx.globalAlpha = 1;
         });
 
@@ -1513,7 +1534,7 @@ const Home = () => {
         ctaCanvas.addEventListener("mousemove", ctaMouseMoveHandler);
         ctaCanvas.addEventListener("mouseleave", ctaMouseOutHandler);
       }
-      
+
       ctaAnimationFrameRef.current = requestAnimationFrame(animateCtaParticles);
     }
 
@@ -1521,7 +1542,7 @@ const Home = () => {
     return () => {
       typed.destroy();
       sr.destroy();
-      
+
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
@@ -1543,7 +1564,7 @@ const Home = () => {
       if (ctaAnimationFrameRef.current) {
         cancelAnimationFrame(ctaAnimationFrameRef.current);
       }
-      
+
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("resize", handleAboutResize);
       window.removeEventListener("resize", handleProjectsResize);
@@ -1552,7 +1573,7 @@ const Home = () => {
       window.removeEventListener("resize", handleQualificationResize);
       window.removeEventListener("resize", handleCtaResize);
       clearInterval(progressInterval);
-      
+
       // Clean up VanillaTilt
       if (imageRef.current && imageRef.current.vanillaTilt) {
         imageRef.current.vanillaTilt.destroy();
@@ -1578,8 +1599,8 @@ const Home = () => {
         <div className="fixed top-0 left-0 w-full h-1 z-50 bg-black/10">
           <div
             className="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg"
-            style={{ 
-              width: `${loadProgress}%`, 
+            style={{
+              width: `${loadProgress}%`,
               transition: "width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
               boxShadow: loadProgress > 0 ? '0 0 10px rgba(139, 92, 246, 0.5)' : 'none'
             }}
@@ -1588,8 +1609,8 @@ const Home = () => {
 
         {/* Optimized Canvas Background */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={canvasRef} 
+          <canvas
+            ref={canvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -1599,7 +1620,7 @@ const Home = () => {
         <div className="absolute w-[200px] h-[200px] bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-3xl top-[10%] left-[10%] animate-float-slow"></div>
         <div className="absolute w-[150px] h-[150px] bg-gradient-to-r from-blue-500/30 to-cyan-500/30 rounded-full blur-3xl bottom-[10%] right-[10%] animate-float-reverse"></div>
         <div className="absolute w-[100px] h-[100px] bg-gradient-to-r from-yellow-500/30 to-orange-500/30 rounded-full blur-2xl top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 animate-pulse-gentle"></div>
-        
+
         {/* Additional floating elements */}
         <div className="absolute w-[80px] h-[80px] bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full blur-2xl top-[20%] right-[20%] animate-float-diagonal"></div>
         <div className="absolute w-[120px] h-[120px] bg-gradient-to-r from-violet-500/20 to-indigo-500/20 rounded-full blur-3xl bottom-[30%] left-[20%] animate-float-reverse-diagonal"></div>
@@ -1607,35 +1628,31 @@ const Home = () => {
         {/* Main Content */}
         <div className="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
           {/* Text Content */}
-          <div className={`w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-center items-center lg:items-start p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 hover:shadow-purple-500/20 sr-left ${
-            isDarkTheme 
-              ? 'border-white/10 bg-white/5 hover:bg-white/8' 
+          <div className={`w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-center items-center lg:items-start p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 hover:shadow-purple-500/20 sr-left ${isDarkTheme
+              ? 'border-white/10 bg-white/5 hover:bg-white/8'
               : 'border-black/10 bg-black/5 hover:bg-black/8'
-          }`}>
-            <h1 className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-2 ${
-              isDarkTheme 
-                ? 'from-yellow-300 via-orange-400 to-pink-400' 
+            }`}>
+            <h1 className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-2 ${isDarkTheme
+                ? 'from-yellow-300 via-orange-400 to-pink-400'
                 : 'from-blue-600 via-purple-600 to-pink-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               {greeting}, I'm Aman Gupta
             </h1>
-            <p className={`text-xl md:text-2xl lg:text-3xl font-semibold mt-4 ${
-              isDarkTheme ? 'text-emerald-400' : 'text-blue-600'
-            }`}>
+            <p className={`text-xl md:text-2xl lg:text-3xl font-semibold mt-4 ${isDarkTheme ? 'text-emerald-400' : 'text-blue-600'
+              }`}>
               <span ref={typedRef}></span>
             </p>
-            
+
             {/* Enhanced Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a
                 href="/RESUME.pdf"
                 download
                 onClick={handleDownload}
-                className={`sr-button group flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-500 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden ${
-                  isDarkTheme 
-                    ? 'text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-500 hover:via-indigo-500 hover:to-blue-500' 
+                className={`sr-button group flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-500 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden ${isDarkTheme
+                    ? 'text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-500 hover:via-indigo-500 hover:to-blue-500'
                     : 'text-white bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-600 hover:from-blue-400 hover:via-purple-400 hover:to-indigo-500'
-                } animate-gradient bg-[length:200%_200%]`}
+                  } animate-gradient bg-[length:200%_200%]`}
               >
                 <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <FaDownload className="group-hover:animate-bounce transition-transform duration-300" />
@@ -1645,28 +1662,26 @@ const Home = () => {
                 href="https://linkedin.com/in/amangupta9454"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`sr-button group flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-500 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden ${
-                  isDarkTheme 
-                    ? 'text-white bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-500 hover:to-indigo-500' 
+                className={`sr-button group flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-500 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden ${isDarkTheme
+                    ? 'text-white bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-500 hover:to-indigo-500'
                     : 'text-white bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-600 hover:from-cyan-400 hover:via-blue-400 hover:to-indigo-500'
-                } animate-gradient bg-[length:200%_200%]`}
+                  } animate-gradient bg-[length:200%_200%]`}
               >
                 <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <FaLinkedin className="group-hover:animate-bounce transition-transform duration-300" />
                 LinkedIn Profile
               </a>
             </div>
-            
+
             {/* Enhanced Skills Preview */}
             <div className="mt-8 flex flex-wrap gap-3 justify-center lg:justify-start">
               {['React', 'Node.js', 'JavaScript', 'Python', 'MongoDB'].map((skill, index) => (
                 <div
                   key={skill}
-                  className={`sr-skill-card px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-110 hover:-translate-y-1 cursor-default ${
-                    isDarkTheme 
-                      ? 'bg-white/10 text-white/90 hover:bg-white/20 border border-white/20' 
+                  className={`sr-skill-card px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-110 hover:-translate-y-1 cursor-default ${isDarkTheme
+                      ? 'bg-white/10 text-white/90 hover:bg-white/20 border border-white/20'
                       : 'bg-black/10 text-black/90 hover:bg-black/20 border border-black/20'
-                  } backdrop-blur-sm shadow-lg hover:shadow-xl`}
+                    } backdrop-blur-sm shadow-lg hover:shadow-xl`}
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {skill}
@@ -1677,12 +1692,11 @@ const Home = () => {
 
           {/* Image Section */}
           <div className="w-full lg:w-1/2 flex items-center justify-center relative sr-right">
-            <div className={`absolute w-[300px] h-[300px] rounded-full blur-3xl opacity-30 animate-spin-slow ${
-              isDarkTheme 
-                ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500' 
+            <div className={`absolute w-[300px] h-[300px] rounded-full blur-3xl opacity-30 animate-spin-slow ${isDarkTheme
+                ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500'
                 : 'bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400'
-            }`}></div>
-            
+              }`}></div>
+
             <div ref={imageRef} className="relative z-10 transform transition-all duration-700 hover:scale-105">
               <img
                 src={HeroImage}
@@ -1702,8 +1716,8 @@ const Home = () => {
       >
         {/* Canvas Background */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={aboutCanvasRef} 
+          <canvas
+            ref={aboutCanvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -1717,44 +1731,38 @@ const Home = () => {
         {/* Content */}
         <div className="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
           {/* Text Content */}
-          <div className={`w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-center items-center lg:items-start p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 hover:shadow-indigo-500/20 ${
-            isDarkTheme 
-              ? 'border-white/10 bg-white/5 hover:bg-white/8' 
+          <div className={`w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-center items-center lg:items-start p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 hover:shadow-indigo-500/20 ${isDarkTheme
+              ? 'border-white/10 bg-white/5 hover:bg-white/8'
               : 'border-black/10 bg-black/5 hover:bg-black/8'
-          }`}>
-            <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-6 sr-about-heading ${
-              isDarkTheme 
-                ? 'from-cyan-300 via-blue-400 to-purple-400' 
+            }`}>
+            <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-6 sr-about-heading ${isDarkTheme
+                ? 'from-cyan-300 via-blue-400 to-purple-400'
                 : 'from-blue-600 via-purple-600 to-indigo-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               About Me
             </h2>
-            <p className={`text-lg md:text-xl leading-relaxed sr-about-text ${
-              isDarkTheme ? 'text-gray-200' : 'text-gray-700'
-            }`}>
+            <p className={`text-lg md:text-xl leading-relaxed sr-about-text ${isDarkTheme ? 'text-gray-200' : 'text-gray-700'
+              }`}>
               I'm <span className="font-semibold text-purple-400">Aman Gupta</span>, a passionate Full Stack Web Developer with expertise in modern web technologies. I specialize in creating seamless digital experiences that solve real-world problems through clean, efficient code.
             </p>
-            <p className={`text-lg md:text-xl leading-relaxed mt-4 sr-about-text ${
-              isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-            }`}>
+            <p className={`text-lg md:text-xl leading-relaxed mt-4 sr-about-text ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+              }`}>
               My journey is fueled by continuous learning, innovation, and a love for crafting user-friendly applications. When I'm not coding, I enjoy exploring new tech trends and contributing to open-source projects.
             </p>
-            
+
             {/* Enhanced About Stats */}
             <div className="grid grid-cols-2 gap-4 mt-6 w-full">
-              <div className={`sr-skill-card p-4 rounded-xl text-center transition-all duration-300 hover:scale-105 ${
-                isDarkTheme 
-                  ? 'bg-white/10 border border-white/20' 
+              <div className={`sr-skill-card p-4 rounded-xl text-center transition-all duration-300 hover:scale-105 ${isDarkTheme
+                  ? 'bg-white/10 border border-white/20'
                   : 'bg-black/10 border border-black/20'
-              } backdrop-blur-sm`}>
+                } backdrop-blur-sm`}>
                 <div className={`text-2xl font-bold ${isDarkTheme ? 'text-cyan-400' : 'text-blue-600'}`}>2+</div>
                 <div className={`text-sm ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'}`}>Years Experience</div>
               </div>
-              <div className={`sr-skill-card p-4 rounded-xl text-center transition-all duration-300 hover:scale-105 ${
-                isDarkTheme 
-                  ? 'bg-white/10 border border-white/20' 
+              <div className={`sr-skill-card p-4 rounded-xl text-center transition-all duration-300 hover:scale-105 ${isDarkTheme
+                  ? 'bg-white/10 border border-white/20'
                   : 'bg-black/10 border border-black/20'
-              } backdrop-blur-sm`}>
+                } backdrop-blur-sm`}>
                 <div className={`text-2xl font-bold ${isDarkTheme ? 'text-purple-400' : 'text-purple-600'}`}>15+</div>
                 <div className={`text-sm ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'}`}>Projects Built</div>
               </div>
@@ -1763,12 +1771,11 @@ const Home = () => {
 
           {/* Image Section */}
           <div className="w-full lg:w-1/2 flex items-center justify-center relative sr-about-image">
-            <div className={`absolute w-[300px] h-[300px] rounded-full blur-3xl opacity-30 animate-spin-slow ${
-              isDarkTheme 
-                ? 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500' 
+            <div className={`absolute w-[300px] h-[300px] rounded-full blur-3xl opacity-30 animate-spin-slow ${isDarkTheme
+                ? 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
                 : 'bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400'
-            }`}></div>
-            
+              }`}></div>
+
             <div ref={aboutImageRef} className="relative z-10 transform transition-all duration-700 hover:scale-105">
               <img
                 src={hero}
@@ -1788,8 +1795,8 @@ const Home = () => {
       >
         {/* Canvas Background with faster particles */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={projectsCanvasRef} 
+          <canvas
+            ref={projectsCanvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -1805,17 +1812,15 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl w-full">
           {/* Section Header */}
           <div className="text-center  pb-16">
-            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-project-heading ${
-              isDarkTheme 
-                ? 'from-emerald-300 via-cyan-400 to-blue-400' 
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-project-heading ${isDarkTheme
+                ? 'from-emerald-300 via-cyan-400 to-blue-400'
                 : 'from-emerald-600 via-cyan-600 to-blue-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               My Projects
             </h2>
-            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-project-heading ${
-              isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-            }`}>
-              Here are some of my recent projects that showcase my skills in full-stack development, 
+            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-project-heading ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+              }`}>
+              Here are some of my recent projects that showcase my skills in full-stack development,
               AI integration, and modern web technologies.
             </p>
           </div>
@@ -1825,21 +1830,19 @@ const Home = () => {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`sr-project-card group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 hover:shadow-cyan-500/20 ${
-                  isDarkTheme 
-                    ? 'border-white/10 bg-white/5 hover:bg-white/8' 
+                className={`sr-project-card group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 hover:shadow-cyan-500/20 ${isDarkTheme
+                    ? 'border-white/10 bg-white/5 hover:bg-white/8'
                     : 'border-black/10 bg-black/5 hover:bg-black/8'
-                } ${project.featured ? 'ring-2 ring-gradient-to-r ring-cyan-500/30' : ''}`}
+                  } ${project.featured ? 'ring-2 ring-gradient-to-r ring-cyan-500/30' : ''}`}
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Featured Badge */}
                 {project.featured && (
                   <div className="absolute -top-3 -right-3 z-10">
-                    <div className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold ${
-                      isDarkTheme 
-                        ? 'bg-gradient-to-r from-yellow-400 to-orange-400 text-black' 
+                    <div className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold ${isDarkTheme
+                        ? 'bg-gradient-to-r from-yellow-400 to-orange-400 text-black'
                         : 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white'
-                    } shadow-lg animate-pulse`}>
+                      } shadow-lg animate-pulse`}>
                       <FaStar className="w-3 h-3" />
                       Featured
                     </div>
@@ -1859,15 +1862,13 @@ const Home = () => {
 
                 {/* Project Content */}
                 <div className="space-y-4">
-                  <h3 className={`text-xl lg:text-2xl font-bold ${
-                    isDarkTheme ? 'text-white' : 'text-gray-900'
-                  } group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-400 transition-all duration-300`}>
+                  <h3 className={`text-xl lg:text-2xl font-bold ${isDarkTheme ? 'text-white' : 'text-gray-900'
+                    } group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-400 transition-all duration-300`}>
                     {project.name}
                   </h3>
-                  
-                  <p className={`text-sm lg:text-base leading-relaxed ${
-                    isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-                  }`}>
+
+                  <p className={`text-sm lg:text-base leading-relaxed ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+                    }`}>
                     {project.description}
                   </p>
 
@@ -1876,11 +1877,10 @@ const Home = () => {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:scale-110 ${
-                          isDarkTheme 
-                            ? 'bg-white/10 text-cyan-300 hover:bg-white/20 border border-white/20' 
+                        className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 hover:scale-110 ${isDarkTheme
+                            ? 'bg-white/10 text-cyan-300 hover:bg-white/20 border border-white/20'
                             : 'bg-black/10 text-blue-600 hover:bg-black/20 border border-black/20'
-                        } backdrop-blur-sm`}
+                          } backdrop-blur-sm`}
                       >
                         {tag}
                       </span>
@@ -1893,11 +1893,10 @@ const Home = () => {
                       href={project.sourceCode}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl ${
-                        isDarkTheme 
-                          ? 'bg-gradient-to-r from-gray-700 to-gray-600 text-white hover:from-gray-600 hover:to-gray-500' 
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl ${isDarkTheme
+                          ? 'bg-gradient-to-r from-gray-700 to-gray-600 text-white hover:from-gray-600 hover:to-gray-500'
                           : 'bg-gradient-to-r from-gray-600 to-gray-700 text-white hover:from-gray-500 hover:to-gray-600'
-                      }`}
+                        }`}
                     >
                       <FaGithub className="w-4 h-4" />
                       Code
@@ -1906,11 +1905,10 @@ const Home = () => {
                       href={project.livePreview}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl ${
-                        isDarkTheme 
-                          ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white hover:from-cyan-500 hover:to-blue-500' 
+                      className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl ${isDarkTheme
+                          ? 'bg-gradient-to-r from-cyan-600 to-blue-600 text-white hover:from-cyan-500 hover:to-blue-500'
                           : 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:from-cyan-400 hover:to-blue-400'
-                      }`}
+                        }`}
                     >
                       <FaExternalLinkAlt className="w-4 h-4" />
                       Live Demo
@@ -1927,11 +1925,10 @@ const Home = () => {
               href="https://github.com/amangupta9454"
               target="_blank"
               rel="noopener noreferrer"
-              className={`sr-button group inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-500 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden ${
-                isDarkTheme 
-                  ? 'text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500' 
+              className={`sr-button group inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-500 hover:scale-105 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 relative overflow-hidden ${isDarkTheme
+                  ? 'text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:via-teal-500 hover:to-cyan-500'
                   : 'text-white bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-600 hover:from-emerald-400 hover:via-teal-400 hover:to-cyan-500'
-              } animate-gradient bg-[length:200%_200%]`}
+                } animate-gradient bg-[length:200%_200%]`}
             >
               <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               <FaCode className="group-hover:animate-bounce transition-transform duration-300" />
@@ -1948,8 +1945,8 @@ const Home = () => {
       >
         {/* Canvas Background with triangular/hexagonal particles */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={skillsCanvasRef} 
+          <canvas
+            ref={skillsCanvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -1965,17 +1962,15 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl w-full">
           {/* Section Header */}
           <div className="text-center pb-16">
-            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-skills-heading ${
-              isDarkTheme 
-                ? 'from-purple-300 via-indigo-400 to-blue-400' 
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-skills-heading ${isDarkTheme
+                ? 'from-purple-300 via-indigo-400 to-blue-400'
                 : 'from-purple-600 via-indigo-600 to-blue-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               My Skills
             </h2>
-            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-skills-heading ${
-              isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-            }`}>
-              Here are the technologies and tools I work with to create amazing digital experiences 
+            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-skills-heading ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+              }`}>
+              Here are the technologies and tools I work with to create amazing digital experiences
               and bring ideas to life.
             </p>
           </div>
@@ -1985,11 +1980,10 @@ const Home = () => {
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className={`sr-skills-card group relative p-6 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.05] transition-all duration-700 cursor-default ${
-                  isDarkTheme 
-                    ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-purple-500/20' 
+                className={`sr-skills-card group relative p-6 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.05] transition-all duration-700 cursor-default ${isDarkTheme
+                    ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-purple-500/20'
                     : 'border-black/10 bg-black/5 hover:bg-black/8 hover:shadow-purple-500/20'
-                }`}
+                  }`}
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Skill Icon */}
@@ -1997,59 +1991,53 @@ const Home = () => {
                   <div className="text-4xl lg:text-5xl transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                     {skill.icon}
                   </div>
-                  
+
                   {/* Skill Name */}
-                  <h3 className={`text-sm lg:text-base font-bold text-center ${
-                    isDarkTheme ? 'text-white group-hover:text-purple-300' : 'text-gray-900 group-hover:text-purple-600'
-                  } transition-colors duration-300`}>
+                  <h3 className={`text-sm lg:text-base font-bold text-center ${isDarkTheme ? 'text-white group-hover:text-purple-300' : 'text-gray-900 group-hover:text-purple-600'
+                    } transition-colors duration-300`}>
                     {skill.name}
                   </h3>
-                  
+
                   {/* Proficiency Bar */}
                   <div className="w-full bg-gray-200/20 rounded-full h-2 lg:h-3 overflow-hidden">
-                    <div 
-                      className={`h-full rounded-full transition-all duration-1000 delay-300 ${
-                        isDarkTheme 
-                          ? 'bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500' 
+                    <div
+                      className={`h-full rounded-full transition-all duration-1000 delay-300 ${isDarkTheme
+                          ? 'bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500'
                           : 'bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600'
-                      } group-hover:shadow-lg group-hover:shadow-purple-500/30`}
-                      style={{ 
+                        } group-hover:shadow-lg group-hover:shadow-purple-500/30`}
+                      style={{
                         width: `${skill.proficiency}%`,
                         animationDelay: `${index * 100 + 500}ms`
                       }}
                     />
                   </div>
-                  
+
                   {/* Proficiency Percentage */}
-                  <div className={`text-xs lg:text-sm font-semibold ${
-                    isDarkTheme ? 'text-purple-300' : 'text-purple-600'
-                  } opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                  <div className={`text-xs lg:text-sm font-semibold ${isDarkTheme ? 'text-purple-300' : 'text-purple-600'
+                    } opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
                     {skill.proficiency}%
                   </div>
                 </div>
-                
+
                 {/* Animated border on hover */}
-                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-blue-500/10' 
+                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${isDarkTheme
+                    ? 'bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-blue-500/10'
                     : 'bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-blue-500/10'
-                } pointer-events-none`}></div>
+                  } pointer-events-none`}></div>
               </div>
             ))}
           </div>
 
           {/* Skills Summary */}
           <div className="text-center mt-16">
-            <div className={`inline-flex items-center gap-4 px-8 py-4 rounded-xl border backdrop-blur-xl ${
-              isDarkTheme 
-                ? 'border-white/10 bg-white/5 text-gray-300' 
+            <div className={`inline-flex items-center gap-4 px-8 py-4 rounded-xl border backdrop-blur-xl ${isDarkTheme
+                ? 'border-white/10 bg-white/5 text-gray-300'
                 : 'border-black/10 bg-black/5 text-gray-600'
-            } shadow-xl`}>
+              } shadow-xl`}>
               <div className="text-2xl lg:text-3xl">🚀</div>
               <div>
-                <div className={`text-lg lg:text-xl font-bold ${
-                  isDarkTheme ? 'text-white' : 'text-gray-900'
-                }`}>
+                <div className={`text-lg lg:text-xl font-bold ${isDarkTheme ? 'text-white' : 'text-gray-900'
+                  }`}>
                   Always Learning
                 </div>
                 <div className="text-sm lg:text-base">
@@ -2068,8 +2056,8 @@ const Home = () => {
       >
         {/* Canvas Background with diamond-shaped particles */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={experienceCanvasRef} 
+          <canvas
+            ref={experienceCanvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -2085,17 +2073,15 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl w-full">
           {/* Section Header */}
           <div className="text-center pb-16">
-            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-experience-heading ${
-              isDarkTheme 
-                ? 'from-orange-300 via-amber-400 to-yellow-400' 
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-experience-heading ${isDarkTheme
+                ? 'from-orange-300 via-amber-400 to-yellow-400'
                 : 'from-orange-600 via-amber-600 to-yellow-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               My Experience
             </h2>
-            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-experience-heading ${
-              isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-            }`}>
-              Here's my professional journey showcasing internships and hands-on experience 
+            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-experience-heading ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+              }`}>
+              Here's my professional journey showcasing internships and hands-on experience
               in web development and programming.
             </p>
           </div>
@@ -2103,50 +2089,43 @@ const Home = () => {
           {/* Experience Timeline */}
           <div className="relative">
             {/* Timeline Line */}
-            <div className={`sr-experience-timeline absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-1 ${
-              isDarkTheme 
-                ? 'bg-gradient-to-b from-orange-500 via-amber-500 to-yellow-500' 
+            <div className={`sr-experience-timeline absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 top-0 bottom-0 w-1 ${isDarkTheme
+                ? 'bg-gradient-to-b from-orange-500 via-amber-500 to-yellow-500'
                 : 'bg-gradient-to-b from-orange-600 via-amber-600 to-yellow-600'
-            } rounded-full shadow-lg`}></div>
-            
+              } rounded-full shadow-lg`}></div>
+
             {/* Experience Cards */}
             <div className="space-y-12">
               {experiences.map((experience, index) => (
                 <div
                   key={experience.id}
-                  className={`sr-experience-card relative flex items-center ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  } flex-col md:justify-center`}
+                  className={`sr-experience-card relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                    } flex-col md:justify-center`}
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
                   {/* Timeline Dot */}
-                  <div className={`absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 rounded-full border-4 ${
-                    isDarkTheme 
-                      ? 'bg-orange-500 border-orange-400 shadow-lg shadow-orange-500/30' 
+                  <div className={`absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 rounded-full border-4 ${isDarkTheme
+                      ? 'bg-orange-500 border-orange-400 shadow-lg shadow-orange-500/30'
                       : 'bg-orange-600 border-orange-500 shadow-lg shadow-orange-600/30'
-                  } z-10 animate-pulse`} style={{ top: '2rem' }}></div>
+                    } z-10 animate-pulse`} style={{ top: '2rem' }}></div>
 
                   {/* Experience Card */}
-                  <div className={`w-full md:w-5/12 ml-12 md:ml-0 group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.03] transition-all duration-700 ${
-                    isDarkTheme 
-                      ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-orange-500/20' 
+                  <div className={`w-full md:w-5/12 ml-12 md:ml-0 group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.03] transition-all duration-700 ${isDarkTheme
+                      ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-orange-500/20'
                       : 'border-black/10 bg-black/5 hover:bg-black/8 hover:shadow-orange-500/20'
-                  }`}>
+                    }`}>
                     {/* Company Icon */}
                     <div className="flex items-center gap-4 mb-4">
-                      <div className={`p-3 rounded-xl ${
-                        isDarkTheme 
-                          ? 'bg-gradient-to-br from-orange-500/20 to-amber-500/20 border border-orange-400/30' 
+                      <div className={`p-3 rounded-xl ${isDarkTheme
+                          ? 'bg-gradient-to-br from-orange-500/20 to-amber-500/20 border border-orange-400/30'
                           : 'bg-gradient-to-br from-orange-500/20 to-amber-500/20 border border-orange-500/30'
-                      } transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6`}>
-                        <FaBriefcase className={`text-2xl ${
-                          isDarkTheme ? 'text-orange-400' : 'text-orange-600'
-                        }`} />
+                        } transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6`}>
+                        <FaBriefcase className={`text-2xl ${isDarkTheme ? 'text-orange-400' : 'text-orange-600'
+                          }`} />
                       </div>
                       <div>
-                        <h3 className={`text-xl lg:text-2xl font-bold ${
-                          isDarkTheme ? 'text-white group-hover:text-orange-300' : 'text-gray-900 group-hover:text-orange-600'
-                        } transition-colors duration-300`}>
+                        <h3 className={`text-xl lg:text-2xl font-bold ${isDarkTheme ? 'text-white group-hover:text-orange-300' : 'text-gray-900 group-hover:text-orange-600'
+                          } transition-colors duration-300`}>
                           {experience.title}
                         </h3>
                       </div>
@@ -2155,54 +2134,46 @@ const Home = () => {
                     {/* Company and Duration */}
                     <div className="space-y-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <FaBuilding className={`text-lg ${
-                          isDarkTheme ? 'text-amber-400' : 'text-amber-600'
-                        }`} />
-                        <span className={`text-lg font-semibold ${
-                          isDarkTheme ? 'text-amber-300' : 'text-amber-700'
-                        }`}>
+                        <FaBuilding className={`text-lg ${isDarkTheme ? 'text-amber-400' : 'text-amber-600'
+                          }`} />
+                        <span className={`text-lg font-semibold ${isDarkTheme ? 'text-amber-300' : 'text-amber-700'
+                          }`}>
                           {experience.company}
                         </span>
                       </div>
-                      
+
                       <div className="flex items-center gap-3">
-                        <FaCalendarAlt className={`text-lg ${
-                          isDarkTheme ? 'text-orange-400' : 'text-orange-600'
-                        }`} />
-                        <span className={`text-base ${
-                          isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-                        }`}>
+                        <FaCalendarAlt className={`text-lg ${isDarkTheme ? 'text-orange-400' : 'text-orange-600'
+                          }`} />
+                        <span className={`text-base ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+                          }`}>
                           {experience.duration}
                         </span>
                       </div>
                     </div>
 
                     {/* Description */}
-                    <p className={`text-base lg:text-lg leading-relaxed ${
-                      isDarkTheme ? 'text-gray-200' : 'text-gray-700'
-                    }`}>
+                    <p className={`text-base lg:text-lg leading-relaxed ${isDarkTheme ? 'text-gray-200' : 'text-gray-700'
+                      }`}>
                       {experience.description}
                     </p>
 
                     {/* Decorative Elements */}
-                    <div className={`absolute -top-2 -right-2 w-8 h-8 rounded-full ${
-                      isDarkTheme 
-                        ? 'bg-gradient-to-br from-orange-500 to-amber-500' 
+                    <div className={`absolute -top-2 -right-2 w-8 h-8 rounded-full ${isDarkTheme
+                        ? 'bg-gradient-to-br from-orange-500 to-amber-500'
                         : 'bg-gradient-to-br from-orange-600 to-amber-600'
-                    } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping`}></div>
-                    
-                    <div className={`absolute -bottom-2 -left-2 w-6 h-6 rounded-full ${
-                      isDarkTheme 
-                        ? 'bg-gradient-to-br from-amber-500 to-yellow-500' 
+                      } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping`}></div>
+
+                    <div className={`absolute -bottom-2 -left-2 w-6 h-6 rounded-full ${isDarkTheme
+                        ? 'bg-gradient-to-br from-amber-500 to-yellow-500'
                         : 'bg-gradient-to-br from-amber-600 to-yellow-600'
-                    } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse`}></div>
+                      } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse`}></div>
 
                     {/* Enhanced glow effect on hover */}
-                    <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                      isDarkTheme 
-                        ? 'bg-gradient-to-r from-orange-500/5 via-amber-500/5 to-yellow-500/5' 
+                    <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${isDarkTheme
+                        ? 'bg-gradient-to-r from-orange-500/5 via-amber-500/5 to-yellow-500/5'
                         : 'bg-gradient-to-r from-orange-500/5 via-amber-500/5 to-yellow-500/5'
-                    } pointer-events-none`}></div>
+                      } pointer-events-none`}></div>
                   </div>
                 </div>
               ))}
@@ -2211,16 +2182,14 @@ const Home = () => {
 
           {/* Experience Summary */}
           <div className="text-center mt-16">
-            <div className={`inline-flex items-center gap-4 px-8 py-4 rounded-xl border backdrop-blur-xl ${
-              isDarkTheme 
-                ? 'border-white/10 bg-white/5 text-gray-300' 
+            <div className={`inline-flex items-center gap-4 px-8 py-4 rounded-xl border backdrop-blur-xl ${isDarkTheme
+                ? 'border-white/10 bg-white/5 text-gray-300'
                 : 'border-black/10 bg-black/5 text-gray-600'
-            } shadow-xl hover:scale-105 transition-transform duration-300`}>
+              } shadow-xl hover:scale-105 transition-transform duration-300`}>
               <div className="text-2xl lg:text-3xl">💼</div>
               <div>
-                <div className={`text-lg lg:text-xl font-bold ${
-                  isDarkTheme ? 'text-white' : 'text-gray-900'
-                }`}>
+                <div className={`text-lg lg:text-xl font-bold ${isDarkTheme ? 'text-white' : 'text-gray-900'
+                  }`}>
                   Growing Experience
                 </div>
                 <div className="text-sm lg:text-base">
@@ -2239,8 +2208,8 @@ const Home = () => {
       >
         {/* Canvas Background with flowing particles */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={qualificationCanvasRef} 
+          <canvas
+            ref={qualificationCanvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -2256,17 +2225,15 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl w-full">
           {/* Section Header */}
           <div className="text-center pb-16">
-            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-qualification-heading ${
-              isDarkTheme 
-                ? 'from-blue-300 via-cyan-400 to-green-400' 
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-qualification-heading ${isDarkTheme
+                ? 'from-blue-300 via-cyan-400 to-green-400'
                 : 'from-blue-600 via-cyan-600 to-green-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               Qualification & Achievements
             </h2>
-            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-qualification-heading ${
-              isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-            }`}>
-              My educational journey and notable achievements that have shaped my development 
+            <p className={`text-lg md:text-xl max-w-3xl mx-auto sr-qualification-heading ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+              }`}>
+              My educational journey and notable achievements that have shaped my development
               as a software engineer and problem solver.
             </p>
           </div>
@@ -2276,23 +2243,21 @@ const Home = () => {
             {qualifications.map((qualification, index) => (
               <div
                 key={qualification.id}
-                className={`sr-qualification-card group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.03] transition-all duration-700 ${
-                  isDarkTheme 
-                    ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-blue-500/20' 
+                className={`sr-qualification-card group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.03] transition-all duration-700 ${isDarkTheme
+                    ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-blue-500/20'
                     : 'border-black/10 bg-black/5 hover:bg-black/8 hover:shadow-blue-500/20'
-                }`}
-                style={{ 
+                  }`}
+                style={{
                   animationDelay: `${index * 120}ms`,
                   backgroundImage: qualification.gradient
                 }}
               >
                 {/* Status Badge */}
                 <div className="absolute -top-3 -right-3 z-10">
-                  <div className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold ${
-                    qualification.badge === 'In Progress' 
+                  <div className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold ${qualification.badge === 'In Progress'
                       ? (isDarkTheme ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white' : 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white')
                       : (isDarkTheme ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white' : 'bg-gradient-to-r from-green-600 to-emerald-600 text-white')
-                  } shadow-lg`}>
+                    } shadow-lg`}>
                     {qualification.badge}
                   </div>
                 </div>
@@ -2300,55 +2265,48 @@ const Home = () => {
                 {/* Content */}
                 <div className="flex items-start gap-6">
                   {/* Icon */}
-                  <div className={`p-4 rounded-xl border transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ${
-                    qualification.borderColor || 'border-blue-400'
-                  } ${
-                    isDarkTheme 
-                      ? 'bg-white/5 border-opacity-30' 
+                  <div className={`p-4 rounded-xl border transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ${qualification.borderColor || 'border-blue-400'
+                    } ${isDarkTheme
+                      ? 'bg-white/5 border-opacity-30'
                       : 'bg-black/5 border-opacity-30'
-                  }`}>
+                    }`}>
                     {qualification.icon}
                   </div>
-                  
+
                   {/* Details */}
                   <div className="flex-1">
-                    <h3 className={`text-xl lg:text-2xl font-bold mb-2 ${
-                      isDarkTheme ? 'text-white group-hover:text-blue-300' : 'text-gray-900 group-hover:text-blue-600'
-                    } transition-colors duration-300`}>
+                    <h3 className={`text-xl lg:text-2xl font-bold mb-2 ${isDarkTheme ? 'text-white group-hover:text-blue-300' : 'text-gray-900 group-hover:text-blue-600'
+                      } transition-colors duration-300`}>
                       {qualification.title}
                     </h3>
-                    
-                    <h4 className={`text-base lg:text-lg font-semibold mb-3 ${
-                      isDarkTheme ? 'text-blue-300' : 'text-blue-700'
-                    }`}>
+
+                    <h4 className={`text-base lg:text-lg font-semibold mb-3 ${isDarkTheme ? 'text-blue-300' : 'text-blue-700'
+                      }`}>
                       {qualification.subtitle}
                     </h4>
-                    
-                    <p className={`text-base ${
-                      isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-                    }`}>
+
+                    <p className={`text-base ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
                       {qualification.detail}
                     </p>
                   </div>
                 </div>
 
                 {/* Hover Glow Effect */}
-                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-r from-blue-500/5 via-cyan-500/5 to-green-500/5' 
+                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${isDarkTheme
+                    ? 'bg-gradient-to-r from-blue-500/5 via-cyan-500/5 to-green-500/5'
                     : 'bg-gradient-to-r from-blue-500/5 via-cyan-500/5 to-green-500/5'
-                } pointer-events-none`}></div>
+                  } pointer-events-none`}></div>
               </div>
             ))}
           </div>
 
           {/* Achievements Section */}
           <div className="text-center mb-12">
-            <h3 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 ${
-              isDarkTheme 
-                ? 'from-yellow-300 via-orange-400 to-red-400' 
+            <h3 className={`text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 ${isDarkTheme
+                ? 'from-yellow-300 via-orange-400 to-red-400'
                 : 'from-yellow-600 via-orange-600 to-red-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               Notable Achievements
             </h3>
           </div>
@@ -2358,23 +2316,21 @@ const Home = () => {
             {achievements.map((achievement, index) => (
               <div
                 key={achievement.id}
-                className={`sr-achievement-card group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.03] transition-all duration-700 ${
-                  isDarkTheme 
-                    ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-yellow-500/20' 
+                className={`sr-achievement-card group relative p-6 lg:p-8 rounded-2xl border backdrop-blur-xl shadow-2xl hover:scale-[1.03] transition-all duration-700 ${isDarkTheme
+                    ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-yellow-500/20'
                     : 'border-black/10 bg-black/5 hover:bg-black/8 hover:shadow-yellow-500/20'
-                }`}
-                style={{ 
+                  }`}
+                style={{
                   animationDelay: `${(qualifications.length * 120) + (index * 200)}ms`,
                   backgroundImage: achievement.gradient
                 }}
               >
                 {/* Trophy Badge */}
                 <div className="absolute -top-3 -right-3 z-10">
-                  <div className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold ${
-                    isDarkTheme 
-                      ? 'bg-gradient-to-r from-yellow-400 to-orange-400 text-black' 
+                  <div className={`flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold ${isDarkTheme
+                      ? 'bg-gradient-to-r from-yellow-400 to-orange-400 text-black'
                       : 'bg-gradient-to-r from-yellow-500 to-orange-500 text-white'
-                  } shadow-lg animate-pulse`}>
+                    } shadow-lg animate-pulse`}>
                     <FaStar className="w-3 h-3" />
                     {achievement.badge}
                   </div>
@@ -2383,73 +2339,63 @@ const Home = () => {
                 {/* Content */}
                 <div className="flex items-start gap-6">
                   {/* Trophy Icon */}
-                  <div className={`p-4 rounded-xl border transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ${
-                    achievement.borderColor || 'border-yellow-400'
-                  } ${
-                    isDarkTheme 
-                      ? 'bg-white/5 border-opacity-30' 
+                  <div className={`p-4 rounded-xl border transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 ${achievement.borderColor || 'border-yellow-400'
+                    } ${isDarkTheme
+                      ? 'bg-white/5 border-opacity-30'
                       : 'bg-black/5 border-opacity-30'
-                  }`}>
+                    }`}>
                     {achievement.icon}
                   </div>
-                  
+
                   {/* Details */}
                   <div className="flex-1">
-                    <h3 className={`text-xl lg:text-2xl font-bold mb-2 ${
-                      isDarkTheme ? 'text-white group-hover:text-yellow-300' : 'text-gray-900 group-hover:text-yellow-600'
-                    } transition-colors duration-300`}>
+                    <h3 className={`text-xl lg:text-2xl font-bold mb-2 ${isDarkTheme ? 'text-white group-hover:text-yellow-300' : 'text-gray-900 group-hover:text-yellow-600'
+                      } transition-colors duration-300`}>
                       {achievement.title}
                     </h3>
-                    
-                    <h4 className={`text-base lg:text-lg font-semibold mb-3 ${
-                      isDarkTheme ? 'text-yellow-300' : 'text-yellow-700'
-                    }`}>
+
+                    <h4 className={`text-base lg:text-lg font-semibold mb-3 ${isDarkTheme ? 'text-yellow-300' : 'text-yellow-700'
+                      }`}>
                       {achievement.subtitle}
                     </h4>
-                    
-                    <p className={`text-base ${
-                      isDarkTheme ? 'text-gray-300' : 'text-gray-600'
-                    }`}>
+
+                    <p className={`text-base ${isDarkTheme ? 'text-gray-300' : 'text-gray-600'
+                      }`}>
                       {achievement.detail}
                     </p>
                   </div>
                 </div>
 
                 {/* Sparkle Effects */}
-                <div className={`absolute -top-2 -left-2 w-8 h-8 rounded-full ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-br from-yellow-500 to-orange-500' 
+                <div className={`absolute -top-2 -left-2 w-8 h-8 rounded-full ${isDarkTheme
+                    ? 'bg-gradient-to-br from-yellow-500 to-orange-500'
                     : 'bg-gradient-to-br from-yellow-600 to-orange-600'
-                } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping`}></div>
-                
-                <div className={`absolute -bottom-2 -right-2 w-6 h-6 rounded-full ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-br from-orange-500 to-red-500' 
+                  } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-ping`}></div>
+
+                <div className={`absolute -bottom-2 -right-2 w-6 h-6 rounded-full ${isDarkTheme
+                    ? 'bg-gradient-to-br from-orange-500 to-red-500'
                     : 'bg-gradient-to-br from-orange-600 to-red-600'
-                } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse`}></div>
+                  } opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse`}></div>
 
                 {/* Hover Glow Effect */}
-                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-r from-yellow-500/5 via-orange-500/5 to-red-500/5' 
+                <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${isDarkTheme
+                    ? 'bg-gradient-to-r from-yellow-500/5 via-orange-500/5 to-red-500/5'
                     : 'bg-gradient-to-r from-yellow-500/5 via-orange-500/5 to-red-500/5'
-                } pointer-events-none`}></div>
+                  } pointer-events-none`}></div>
               </div>
             ))}
           </div>
 
           {/* Summary */}
           <div className="text-center mt-16">
-            <div className={`inline-flex items-center gap-4 px-8 py-4 rounded-xl border backdrop-blur-xl ${
-              isDarkTheme 
-                ? 'border-white/10 bg-white/5 text-gray-300' 
+            <div className={`inline-flex items-center gap-4 px-8 py-4 rounded-xl border backdrop-blur-xl ${isDarkTheme
+                ? 'border-white/10 bg-white/5 text-gray-300'
                 : 'border-black/10 bg-black/5 text-gray-600'
-            } shadow-xl hover:scale-105 transition-transform duration-300`}>
+              } shadow-xl hover:scale-105 transition-transform duration-300`}>
               <div className="text-2xl lg:text-3xl">🎓</div>
               <div>
-                <div className={`text-lg lg:text-xl font-bold ${
-                  isDarkTheme ? 'text-white' : 'text-gray-900'
-                }`}>
+                <div className={`text-lg lg:text-xl font-bold ${isDarkTheme ? 'text-white' : 'text-gray-900'
+                  }`}>
                   Committed to Excellence
                 </div>
                 <div className="text-sm lg:text-base">
@@ -2468,8 +2414,8 @@ const Home = () => {
       >
         {/* Canvas Background with energetic star particles */}
         <div className="absolute inset-0 z-0">
-          <canvas 
-            ref={ctaCanvasRef} 
+          <canvas
+            ref={ctaCanvasRef}
             className="w-full h-full"
             style={{ background: isDarkTheme ? '#0f0f23' : '#f0f8ff' }}
           />
@@ -2485,40 +2431,35 @@ const Home = () => {
         <div className="relative z-10 max-w-6xl w-full text-center">
           {/* Section Header */}
           <div className="pb-16">
-            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-cta-heading ${
-              isDarkTheme 
-                ? 'from-pink-300 via-purple-400 to-cyan-400' 
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r mb-8 sr-cta-heading ${isDarkTheme
+                ? 'from-pink-300 via-purple-400 to-cyan-400'
                 : 'from-pink-600 via-purple-600 to-cyan-600'
-            } drop-shadow-lg animate-text-shimmer`}>
+              } drop-shadow-lg animate-text-shimmer`}>
               Let's Work Together!
             </h2>
-            <p className={`text-xl md:text-2xl max-w-4xl mx-auto sr-cta-content leading-relaxed ${
-              isDarkTheme ? 'text-gray-200' : 'text-gray-700'
-            }`}>
-              Ready to bring your ideas to life? I'm passionate about creating exceptional 
+            <p className={`text-xl md:text-2xl max-w-4xl mx-auto sr-cta-content leading-relaxed ${isDarkTheme ? 'text-gray-200' : 'text-gray-700'
+              }`}>
+              Ready to bring your ideas to life? I'm passionate about creating exceptional
               digital experiences and would love to collaborate on your next project.
             </p>
           </div>
 
           {/* Main CTA Content */}
-          <div className={`sr-cta-content p-8 lg:p-12 rounded-3xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 mb-12 ${
-            isDarkTheme 
-              ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-purple-500/20' 
+          <div className={`sr-cta-content p-8 lg:p-12 rounded-3xl border backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition-all duration-700 mb-12 ${isDarkTheme
+              ? 'border-white/10 bg-white/5 hover:bg-white/8 hover:shadow-purple-500/20'
               : 'border-black/10 bg-black/5 hover:bg-black/8 hover:shadow-purple-500/20'
-          }`}>
-            
+            }`}>
+
             {/* Contact Info */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className={`sr-cta-content flex flex-col items-center gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 ${
-                isDarkTheme 
-                  ? 'bg-white/5 hover:bg-white/10 border border-white/10' 
+              <div className={`sr-cta-content flex flex-col items-center gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 ${isDarkTheme
+                  ? 'bg-white/5 hover:bg-white/10 border border-white/10'
                   : 'bg-black/5 hover:bg-black/10 border border-black/10'
-              }`}>
-                <div className={`p-4 rounded-full ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-400/30' 
-                    : 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30'
                 }`}>
+                <div className={`p-4 rounded-full ${isDarkTheme
+                    ? 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-400/30'
+                    : 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/30'
+                  }`}>
                   <FaEnvelope className={`text-2xl ${isDarkTheme ? 'text-blue-400' : 'text-blue-600'}`} />
                 </div>
                 <div>
@@ -2531,16 +2472,14 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className={`sr-cta-content flex flex-col items-center gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 ${
-                isDarkTheme 
-                  ? 'bg-white/5 hover:bg-white/10 border border-white/10' 
+              <div className={`sr-cta-content flex flex-col items-center gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 ${isDarkTheme
+                  ? 'bg-white/5 hover:bg-white/10 border border-white/10'
                   : 'bg-black/5 hover:bg-black/10 border border-black/10'
-              }`}>
-                <div className={`p-4 rounded-full ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-400/30' 
-                    : 'bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30'
                 }`}>
+                <div className={`p-4 rounded-full ${isDarkTheme
+                    ? 'bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-400/30'
+                    : 'bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30'
+                  }`}>
                   <FaPhone className={`text-2xl ${isDarkTheme ? 'text-green-400' : 'text-green-600'}`} />
                 </div>
                 <div>
@@ -2553,16 +2492,14 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className={`sr-cta-content flex flex-col items-center gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 ${
-                isDarkTheme 
-                  ? 'bg-white/5 hover:bg-white/10 border border-white/10' 
+              <div className={`sr-cta-content flex flex-col items-center gap-4 p-6 rounded-2xl transition-all duration-300 hover:scale-105 ${isDarkTheme
+                  ? 'bg-white/5 hover:bg-white/10 border border-white/10'
                   : 'bg-black/5 hover:bg-black/10 border border-black/10'
-              }`}>
-                <div className={`p-4 rounded-full ${
-                  isDarkTheme 
-                    ? 'bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-400/30' 
-                    : 'bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30'
                 }`}>
+                <div className={`p-4 rounded-full ${isDarkTheme
+                    ? 'bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-400/30'
+                    : 'bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30'
+                  }`}>
                   <FaMapMarkerAlt className={`text-2xl ${isDarkTheme ? 'text-purple-400' : 'text-purple-600'}`} />
                 </div>
                 <div>
@@ -2580,11 +2517,10 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a
                 href="mailto:ag0567688@gmail.com"
-                className={`sr-cta-button group flex items-center justify-center gap-3 px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-105 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 relative overflow-hidden ${
-                  isDarkTheme 
-                    ? 'text-white bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500' 
+                className={`sr-cta-button group flex items-center justify-center gap-3 px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-105 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 relative overflow-hidden ${isDarkTheme
+                    ? 'text-white bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500'
                     : 'text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 hover:from-pink-400 hover:via-purple-400 hover:to-indigo-500'
-                } animate-gradient bg-[length:200%_200%]`}
+                  } animate-gradient bg-[length:200%_200%]`}
               >
                 <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <FaEnvelope className="group-hover:animate-bounce transition-transform duration-300" />
@@ -2595,11 +2531,10 @@ const Home = () => {
                 href="/RESUME.pdf"
                 download
                 onClick={handleDownload}
-                className={`sr-cta-button group flex items-center justify-center gap-3 px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-105 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 relative overflow-hidden ${
-                  isDarkTheme 
-                    ? 'text-white bg-gradient-to-r from-cyan-600 via-blue-600 to-teal-600 hover:from-cyan-500 hover:via-blue-500 hover:to-teal-500' 
+                className={`sr-cta-button group flex items-center justify-center gap-3 px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-105 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 relative overflow-hidden ${isDarkTheme
+                    ? 'text-white bg-gradient-to-r from-cyan-600 via-blue-600 to-teal-600 hover:from-cyan-500 hover:via-blue-500 hover:to-teal-500'
                     : 'text-white bg-gradient-to-r from-cyan-500 via-blue-500 to-teal-600 hover:from-cyan-400 hover:via-blue-400 hover:to-teal-500'
-                } animate-gradient bg-[length:200%_200%]`}
+                  } animate-gradient bg-[length:200%_200%]`}
               >
                 <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <FaDownload className="group-hover:animate-bounce transition-transform duration-300" />
@@ -2617,11 +2552,10 @@ const Home = () => {
                   href="https://linkedin.com/in/amangupta9454"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`sr-cta-button group p-4 rounded-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${
-                    isDarkTheme 
-                      ? 'bg-white/10 hover:bg-blue-600 text-blue-400 hover:text-white border border-white/20' 
+                  className={`sr-cta-button group p-4 rounded-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${isDarkTheme
+                      ? 'bg-white/10 hover:bg-blue-600 text-blue-400 hover:text-white border border-white/20'
                       : 'bg-black/10 hover:bg-blue-600 text-blue-600 hover:text-white border border-black/20'
-                  } shadow-lg hover:shadow-xl`}
+                    } shadow-lg hover:shadow-xl`}
                 >
                   <FaLinkedin className="text-2xl group-hover:animate-bounce" />
                 </a>
@@ -2630,11 +2564,10 @@ const Home = () => {
                   href="https://github.com/amangupta9454"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`sr-cta-button group p-4 rounded-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${
-                    isDarkTheme 
-                      ? 'bg-white/10 hover:bg-gray-800 text-gray-400 hover:text-white border border-white/20' 
+                  className={`sr-cta-button group p-4 rounded-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${isDarkTheme
+                      ? 'bg-white/10 hover:bg-gray-800 text-gray-400 hover:text-white border border-white/20'
                       : 'bg-black/10 hover:bg-gray-800 text-gray-600 hover:text-white border border-black/20'
-                  } shadow-lg hover:shadow-xl`}
+                    } shadow-lg hover:shadow-xl`}
                 >
                   <FaGithub className="text-2xl group-hover:animate-bounce" />
                 </a>

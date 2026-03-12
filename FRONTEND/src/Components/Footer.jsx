@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaLinkedin,  FaInstagram,  FaTelegram,  FaWhatsapp,   FaArrowUp,  FaMapMarkerAlt, FaHeart, FaCode, FaRocket } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTelegram, FaWhatsapp, FaArrowUp, FaMapMarkerAlt, FaHeart, FaCode, FaRocket } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
@@ -27,24 +27,23 @@ const Footer = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-blue-500/15 to-cyan-500/15 rounded-full blur-3xl animate-bounce" style={{animationDuration: '8s'}}></div>
-        <div className="absolute bottom-20 left-1/3 w-64 h-64 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-full blur-2xl animate-spin" style={{animationDuration: '20s'}}></div>
-        
+        <div className="absolute top-40 right-20 w-96 h-96 bg-gradient-to-r from-blue-500/15 to-cyan-500/15 rounded-full blur-3xl animate-bounce" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute bottom-20 left-1/3 w-64 h-64 bg-gradient-to-r from-green-500/10 to-emerald-500/10 rounded-full blur-2xl animate-spin" style={{ animationDuration: '20s' }}></div>
+
         {/* Floating Particles */}
         <div className="absolute top-20 left-1/4 w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
-        <div className="absolute top-60 right-1/3 w-3 h-3 bg-purple-400 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-40 left-1/5 w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
-        
+        <div className="absolute top-60 right-1/3 w-3 h-3 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-40 left-1/5 w-2 h-2 bg-pink-400 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
+
         {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse" style={{animationDuration: '4s'}}></div>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse" style={{ animationDuration: '4s' }}></div>
       </div>
 
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 z-50 p-4 rounded-full bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 text-white shadow-2xl transition-all duration-500 transform hover:scale-110 hover:rotate-12 group ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-        }`}
+        className={`fixed bottom-8 right-8 z-50 p-4 rounded-full bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-500 text-white shadow-2xl transition-all duration-500 transform hover:scale-110 hover:rotate-12 group ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+          }`}
         aria-label="Scroll to top"
       >
         <FaArrowUp size={20} className="group-hover:animate-bounce" />
@@ -54,7 +53,7 @@ const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-          
+
           {/* Brand Section */}
           <div className="space-y-8 transform hover:scale-105 transition-all duration-500">
             <div className="relative">
@@ -65,16 +64,16 @@ const Footer = () => {
               </h2>
               <FaRocket className="absolute -top-4 -right-6 text-3xl text-yellow-400 animate-bounce" />
             </div>
-            
+
             <div className="relative p-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-700/50 hover:border-cyan-500/50 transition-all duration-300">
               <p className="text-lg italic text-gray-300 leading-relaxed">
                 "Crafting digital experiences with passion & precision"
               </p>
-              <FaCode className="absolute -bottom-2 -right-2 text-cyan-400 animate-spin" style={{animationDuration: '8s'}} />
+              <FaCode className="absolute -bottom-2 -right-2 text-cyan-400 animate-spin" style={{ animationDuration: '8s' }} />
             </div>
 
             <div className="w-full h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent translate-x-[-100%] animate-pulse" style={{animationDuration: '2s', animationIterationCount: 'infinite'}}></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent translate-x-[-100%] animate-pulse" style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}></div>
             </div>
           </div>
 
@@ -101,7 +100,7 @@ const Footer = () => {
               </a>
 
               {/* GitHub */}
-             
+
 
               {/* LinkedIn */}
               <a
@@ -184,16 +183,16 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          
+
           <div className="flex items-center justify-center space-x-8 text-sm text-gray-500">
             <p>© {new Date().getFullYear()} All rights reserved</p>
             <div className="w-1 h-1 bg-gray-500 rounded-full animate-pulse"></div>
-            <p className="font-mono tracking-wider">{ "< Developer / Designer / Dreamer >" }</p>
+            <p className="font-mono tracking-wider">{"< Developer / Designer / Dreamer >"}</p>
           </div>
 
           {/* Animated Bottom Line */}
           <div className="w-full h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 translate-x-[-100%] animate-pulse" style={{animationDuration: '3s', animationIterationCount: 'infinite'}}></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 translate-x-[-100%] animate-pulse" style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}></div>
           </div>
         </div>
       </div>
