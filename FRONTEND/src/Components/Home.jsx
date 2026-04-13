@@ -78,6 +78,14 @@ const Home = () => {
   const experiences = useMemo(() => [
     {
       id: 1,
+      title: "AI Fellowship Program",
+      company: "ALTA SCHOOLS OF TECHNOLOGY",
+      duration: "11 Apr 2026 - Ongoing",
+      description:
+        "Selected for the ALTA AI Builders Fellowship Program, where I am learning and applying AI, Machine Learning, and LLM concepts through hands-on sessions. Gaining experience with modern AI tools and building real-world problem-solving solutions under mentor guidance.",
+    },
+    {
+      id: 2,
       title: "MERN Stack Development Internship",
       company: "CODE-A-NOVA",
       duration: "05 Jan 2026 - Ongoing",
@@ -85,7 +93,7 @@ const Home = () => {
         "Contributing to the development of a startup project focused on providing internships and practical training to students, featuring program listings, student registration, and a modern, responsive web interface.",
     },
     {
-      id: 2,
+      id: 3,
       title: "AI Winter Internship",
       company: "Mirai Schools of Technology",
       duration: "Jan 2026 - Feb 2026",
@@ -94,7 +102,7 @@ const Home = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       title: "Frontend Development Internship",
       company: "Edunet Foundation",
       duration: "20 Aug 2025 - 10 Oct 2025",
@@ -103,7 +111,7 @@ const Home = () => {
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Mern Stack Development Internship",
       company: "CodSoft",
       duration: "10 Sep 2024 - 10 Oct 2024",
@@ -111,7 +119,7 @@ const Home = () => {
         "Worked on full-stack web applications using MongoDB, Express, React, and Node.js, gaining hands-on experience in building scalable solutions.",
     },
     {
-      id: 5,
+      id: 6,
       title: "Frontend Web Development Internship",
       company: "CodeAlpha",
       duration: "15 Sep 2024 - 15 Oct 2024",
@@ -197,10 +205,28 @@ const Home = () => {
       gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.25), transparent)',
       badge: '2nd Position',
     },
-
-
+   {
+  id: 4,
+  icon: <FaTrophy className="text-4xl text-yellow-500" />,
+  title: 'Project Exhibition Winner',
+  subtitle: 'TechnoHack 3.0 – INMANTEC Institutions',
+  detail: 'Secured 3rd position in TechnoHack 3.0 (Innovation Ignite) organized by the Department of IT at INMANTEC Institutions. Presented an innovative solution and was recognized for creativity, technical implementation, and problem-solving approach.',
+  borderColor: 'border-yellow-500',
+  gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.25), transparent)',
+  badge: '3rd Position',
+},
+{
+  id: 5,
+  icon: <FaTrophy className="text-4xl text-yellow-500" />,
+  title: 'Hackathon Finalist',
+  subtitle: 'Hacknovate 7.0 – ABESIT Ghaziabad',
+  detail: 'Selected as a Finalist in Hacknovate 7.0, a 30-hour International Hybrid Hackathon organized at ABES Institute of Technology, Ghaziabad. Successfully developed and presented an innovative solution, demonstrating strong problem-solving, technical, and teamwork skills.',
+  borderColor: 'border-yellow-500',
+  gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.25), transparent)',
+  badge: 'Finalist',
+},
     {
-      id: 4,
+      id: 6,
       icon: <FaTrophy className="text-4xl text-yellow-400" />,
       title: 'Quiz Competition Winner',
       subtitle: 'Gambed Quiz Competition 2024',
@@ -289,7 +315,7 @@ const Home = () => {
       name: "MaaCare — Maternal Healthcare Platform",
       description: "An AI-powered maternal healthcare platform providing personalized support, resources, and community for expectant mothers, leveraging MERN stack and Gemini API for intelligent features.",
       image: matru,
-      sourceCode: "https://github.com/amangupta9454/MATRUCARE-AI",
+      sourceCode: "https://github.com/amangupta9454/MATRUCARE",
       livePreview: "https://matrucare-ai.netlify.app/",
       tags: ["REACT.JS", "TAILWIND CSS", "MONGODB", "EXPRESS.JS", "NODE.JS", "Socket.io","Jitsi"],
       featured: true,
